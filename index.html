@@ -7,11 +7,11 @@
     <meta name="description" content="Atualizações do site da Livre e Leve: lançamentos, melhorias e correções de bugs." />
     <style>
       :root {
-        --bg: #0f0f12; /* dark */
+        --bg: #0f0f12;
         --card: #15161a;
         --text: #e7e7ea;
         --muted: #a1a1aa;
-        --primary: #8b5cf6; /* roxo */
+        --primary: #8b5cf6;
         --gray: #26272b;
         --border: #2f3036;
         --ok: #10b981;
@@ -47,7 +47,7 @@
       .badge-chore { color: #fde68a; border-color: var(--warn); }
       .listWM { display: grid; gap: 12px; }
       .groupWM { margin-top: 24px; }
-      .groupTitleWM { font-size: 14px; color: var(--muted); margin: 8px 0 14px; }
+      .groupTitleWM { font-size: 14px; color: var(--muted); margin: 8px 0 14px; text-transform: capitalize; }
       .itemWM {
         background: linear-gradient(180deg, var(--card), #121318);
         border: 1px solid var(--border);
@@ -90,103 +90,142 @@
     </main>
 
     <script>
-      const state = { entries: [], filtered: [] };
-      const dateFmt = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeZone: 'America/Sao_Paulo' });
+      (function () {
+        const state = { entries: [], filtered: [] };
+        const dateFmt = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeZone: 'America/Sao_Paulo' });
 
-      async function loadData() {
-        const res = await fetch('data/changelog.json', { cache: 'no-store' });
-        if (!res.ok) throw new Error('Falha ao carregar changelog.json');
-        const json = await res.json();
-        // Normaliza e ordena DESC por data
-        state.entries = (json.entries || []).map(e => ({
-          ...e,
-          dateObj: new Date(e.date + (e.time ? 'T' + e.time : 'T00:00:00'))
-        })).sort((a, b) => b.dateObj - a.dateObj);
-        state.filtered = [...state.entries];
-        render();
-      }
-
-      function render() {
-        const list = document.getElementById('list');
-        const count = document.getElementById('count');
-        list.innerHTML = '';
-
-        if (!state.filtered.length) {
-          list.innerHTML = `<div class="emptyWM">Nenhum registro encontrado.</div>`;
-          count.textContent = '0 itens';
-          return;
+        function escapeHtml(s) {
+          const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+          return String(s).replace(/[&<>"']/g, (m) => map[m]);
         }
 
-        // Agrupa por mês/ano
-        const groups = state.filtered.reduce((acc, item) => {
-          const k = item.dateObj.getFullYear() + '-' + String(item.dateObj.getMonth()+1).padStart(2, '0');
-          (acc[k] ||= []).push(item);
-          return acc;
-        }, {});
-
-        const sortedKeys = Object.keys(groups).sort((a, b) => b.localeCompare(a));
-
-        for (const key of sortedKeys) {
-          const [y, m] = key.split('-');
-          const monthTitle = new Date(Number(y), Number(m)-1, 1).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
-
-          const groupEl = document.createElement('div');
-          groupEl.className = 'groupWM';
-          groupEl.innerHTML = `<div class="groupTitleWM">${monthTitle}</div>`;
-
-          for (const it of groups[key]) {
-            const badgeCls = it.type === 'fix' ? 'badgeWM badge-fix' : it.type === 'feature' ? 'badgeWM badge-feature' : 'badgeWM badge-chore';
-            const links = (it.links || []).map(l => `<a class="linkWM" href="${l.url}" target="_blank" rel="noopener noreferrer">${l.label}</a>`).join('');
-            const el = document.createElement('article');
-            el.className = 'itemWM';
-            el.innerHTML = `
-              <div class="itemHeaderWM">
-                <div class="itemTitleWM">${escapeHtml(it.title)}</div>
-                <span class="${badgeCls}">${labelForType(it.type)}</span>
-              </div>
-              <div class="itemMetaWM">${dateFmt.format(it.dateObj)} · ${it.author ? escapeHtml(it.author) : 'Equipe'}</div>
-              <div>${escapeHtml(it.description || '')}</div>
-              ${links ? `<div class="linksWM">${links}</div>` : ''}
-            `;
-            groupEl.appendChild(el);
+        function labelForType(t) {
+          switch (t) {
+            case 'feature': return 'Novidade';
+            case 'fix': return 'Correção';
+            case 'chore': return 'Tarefa';
+            default: return 'Outro';
           }
-          list.appendChild(groupEl);
         }
 
-        count.textContent = `${state.filtered.length} ${state.filtered.length === 1 ? 'item' : 'itens'}`;
-      }
-
-      function labelForType(t) {
-        switch (t) {
-          case 'feature': return 'Novidade';
-          case 'fix': return 'Correção';
-          case 'chore': return 'Tarefa';
-          default: return 'Outro';
+        function sortDesc(a, b) {
+          // date DESC → time DESC → createdAt DESC
+          return (b.date || '').localeCompare(a.date || '') ||
+                 (b.time || '00:00:00').localeCompare(a.time || '00:00:00') ||
+                 (b.createdAt || '').localeCompare(a.createdAt || '');
         }
-      }
 
-      function escapeHtml(s) {
-        return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
-      }
+        async function loadData() {
+          const list = document.getElementById('list');
+          try {
+            const res = await fetch('data/changelog.json', { cache: 'no-store' });
+            if (!res.ok) throw new Error('Falha ao carregar /data/changelog.json (' + res.status + ')');
+            const json = await res.json();
 
-      function applyFilters() {
-        const type = document.getElementById('typeFilter').value;
-        const q = document.getElementById('searchInput').value.toLowerCase().trim();
-        state.filtered = state.entries.filter(e => {
-          const typeOk = type === 'all' ? true : e.type === type;
-          const text = (e.title + ' ' + (e.description||'') + ' ' + (e.author||'')).toLowerCase();
-          const qOk = q ? text.includes(q) : true;
-          return typeOk && qOk;
-        });
-        render();
-      }
+            const entries = Array.isArray(json.entries) ? json.entries : [];
+            state.entries = entries
+              .map((e) => {
+                const dateStr = (e.date || '').slice(0, 10);
+                const timeStr = (e.time || '00:00:00');
+                const d = new Date(dateStr + 'T' + timeStr);
+                return {
+                  ...e,
+                  date: dateStr,
+                  time: timeStr,
+                  dateObj: isNaN(d) ? new Date(dateStr + 'T00:00:00') : d
+                };
+              })
+              .sort(sortDesc);
 
-      document.getElementById('typeFilter').addEventListener('change', applyFilters);
-      document.getElementById('searchInput').addEventListener('input', applyFilters);
+            state.filtered = state.entries.slice();
+            render();
+          } catch (err) {
+            console.error(err);
+            list.innerHTML = '<div class="emptyWM">' + escapeHtml(err.message || 'Erro ao carregar dados') + '</div>';
+            document.getElementById('count').textContent = '0 itens';
+          }
+        }
 
-      loadData().catch(err => {
-        document.getElementById('list').innerHTML = `<div class="emptyWM">${escapeHtml(err.message)}</div>`;
-      });
+        function render() {
+          const list = document.getElementById('list');
+          const count = document.getElementById('count');
+          list.innerHTML = '';
+
+          if (!state.filtered.length) {
+            list.innerHTML = '<div class="emptyWM">Nenhum registro encontrado.</div>';
+            count.textContent = '0 itens';
+            return;
+          }
+
+          // Agrupa por YYYY-MM com keys ordenadas DESC
+          const groups = {};
+          for (const item of state.filtered) {
+            const key = (item.date || '').slice(0, 7); // YYYY-MM
+            if (!groups[key]) groups[key] = [];
+            groups[key].push(item);
+          }
+          const sortedKeys = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+
+          for (const key of sortedKeys) {
+            const parts = key.split('-');
+            const y = Number(parts[0]);
+            const m = Number(parts[1]) - 1;
+            const monthTitle = new Date(y, m, 1).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+
+            const groupEl = document.createElement('div');
+            groupEl.className = 'groupWM';
+            groupEl.innerHTML = '<div class="groupTitleWM">' + monthTitle + '</div>';
+
+            for (const it of groups[key]) {
+              const badgeCls =
+                it.type === 'fix' ? 'badgeWM badge-fix' :
+                it.type === 'feature' ? 'badgeWM badge-feature' :
+                'badgeWM badge-chore';
+
+              const links = Array.isArray(it.links)
+                ? it.links.map((l) =>
+                    '<a class="linkWM" href="' + l.url + '" target="_blank" rel="noopener noreferrer">' +
+                    escapeHtml(l.label || 'Ref') + '</a>'
+                  ).join('')
+                : '';
+
+              const el = document.createElement('article');
+              el.className = 'itemWM';
+              el.innerHTML =
+                '<div class="itemHeaderWM">' +
+                  '<div class="itemTitleWM">' + escapeHtml(it.title || '') + '</div>' +
+                  '<span class="' + badgeCls + '">' + labelForType(it.type) + '</span>' +
+                '</div>' +
+                '<div class="itemMetaWM">' + dateFmt.format(it.dateObj) + ' · ' + escapeHtml(it.author || 'Equipe') + '</div>' +
+                '<div>' + escapeHtml(it.description || '') + '</div>' +
+                (links ? '<div class="linksWM">' + links + '</div>' : '');
+
+              groupEl.appendChild(el);
+            }
+            list.appendChild(groupEl);
+          }
+
+          count.textContent = state.filtered.length + ' ' + (state.filtered.length === 1 ? 'item' : 'itens');
+        }
+
+        function applyFilters() {
+          const type = document.getElementById('typeFilter').value;
+          const q = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+          state.filtered = state.entries.filter((e) => {
+            const typeOk = type === 'all' ? true : e.type === type;
+            const text = ((e.title || '') + ' ' + (e.description || '') + ' ' + (e.author || '')).toLowerCase();
+            const qOk = q ? text.includes(q) : true;
+            return typeOk && qOk;
+          });
+          // já está ordenado
+          render();
+        }
+
+        document.getElementById('typeFilter').addEventListener('change', applyFilters);
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+        loadData();
+      })();
     </script>
   </body>
 </html>

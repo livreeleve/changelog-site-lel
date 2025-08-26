@@ -2,20 +2,31 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
-      "id": "2025-08-26-01",
+      "id": "2025-08-26-003",
       "date": "2025-08-26",
-      "type": "feature",
-      "title": "Criado histórico na busca do site",
-      "description": "Um histórico de busca na busca do site, onde aparecem os 4 últimos termos buscados",
-      "author": "Gustavo Fagundes"
+      "type": "fix",
+      "title": "Otimizado tamanho das imagens no app de coleções",
+      "description": "O app de coelções que a Kayene usa para ordenar produtos estava com as imagens muito grandes, foi otimizado e agora está com a velocidade 95% melhor",
+      "author": "Wanderson da Costa",
+      "createdAt": "2025-08-26T12:30:56.126Z"
     },
     {
-      "id": "2025-08-26-02",
+      "id": "2025-08-26-002",
       "date": "2025-08-26",
       "type": "chore",
       "title": "Limitação do zoom na página de produtos",
       "description": "O zoom da página de produtos foi limitado para evitar que o usuário perca a referência do produto e a imagem fique com a qualidade muito baixa",
-      "author": "Gustavo Fagundes"
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-08-26T12:25:28.614Z"
+    },
+    {
+      "id": "2025-08-26-001",
+      "date": "2025-08-26",
+      "type": "feature",
+      "title": "Criado histórico na busca do site",
+      "description": "Um histórico na busca do site, onde aparecem os 4 últimos termos buscados",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-08-26T12:25:13.116Z"
     }
   ]
 }

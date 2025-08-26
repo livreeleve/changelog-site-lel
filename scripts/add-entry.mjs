@@ -8,34 +8,35 @@ function parseArgs(argv) {
   const args = {};
   for (let i = 2; i < argv.length; i++) {
     const tok = argv[i];
-    if (tok.startsWith('--')) {
-      const eq = tok.indexOf('=');
-      if (eq !== -1) {
-        const key = tok.slice(2, eq);
-        const val = tok.slice(eq + 1);
-        args[key] = val === '' ? true : val;
+    if (!tok.startsWith('--')) continue;
+
+    const eq = tok.indexOf('=');
+    if (eq !== -1) {
+      const key = tok.slice(2, eq);
+      const val = tok.slice(eq + 1);
+      args[key] = val === '' ? true : val;
+    } else {
+      const key = tok.slice(2);
+      const next = argv[i + 1];
+      if (next && !next.startsWith('--')) {
+        args[key] = next;
+        i++;
       } else {
-        const key = tok.slice(2);
-        const next = argv[i + 1];
-        if (next && !next.startsWith('--')) {
-          args[key] = next;
-          i++;
-        } else {
-          args[key] = true;
-        }
+        args[key] = true;
       }
-    } // ignoramos posicionais
+    }
   }
   return args;
 }
 
 function requireArg(args, name) {
-  if (!args[name] || args[name] === true) {
+  if (!Object.prototype.hasOwnProperty.call(args, name) || args[name] === true || args[name] === '') {
     console.error(`Faltou --${name}=valor (ou --${name} "valor")`);
     process.exit(1);
   }
   return args[name];
 }
+
 // ---------- main ----------
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -54,18 +55,36 @@ if (!allowedTypes.has(type)) {
 const title = requireArg(args, 'title');
 const description = args.desc || args.description || '';
 const author = args.author || 'Equipe';
-const date = (args.date || new Date().toISOString().slice(0, 10)).slice(0, 10);
-const link = args.link;
 
+// Normaliza data (ISO yyyy-mm-dd)
+let date = (args.date || new Date().toISOString().slice(0, 10)).slice(0, 10);
+// Hora opcional
+const time = args.time || null;
+
+// Carrega JSON
 const raw = JSON.parse(readFileSync(file, 'utf-8'));
-raw.entries ||= [];
+if (!raw.entries || !Array.isArray(raw.entries)) raw.entries = [];
 
-const id = `${date}-${String(raw.entries.length + 1).padStart(2, '0')}`;
-const entry = { id, date, type, title, description, author };
-if (link) entry.links = [{ label: 'Ref', url: link }];
+// Sequência por dia para ID humano
+const seq = 1 + raw.entries.filter(e => e.date === date).length;
+const id = `${date}-${String(seq).padStart(3, '0')}`;
+
+// Timestamp para desempate e auditoria
+const createdAt = new Date().toISOString();
+
+const entry = { id, date, type, title, description, author, createdAt };
+if (time) entry.time = time;
+if (args.link) entry.links = [{ label: 'Ref', url: args.link }];
 
 raw.entries.push(entry);
-raw.entries.sort((a, b) => new Date(b.date) - new Date(a.date));
 
+// Ordena DESC por date → time → createdAt
+raw.entries.sort((a, b) =>
+  (b.date || '').localeCompare(a.date || '') ||
+  (b.time || '00:00:00').localeCompare(a.time || '00:00:00') ||
+  (b.createdAt || '').localeCompare(a.createdAt || '')
+);
+
+// Salva
 writeFileSync(file, JSON.stringify(raw, null, 2) + '\n', 'utf-8');
 console.log('✅ Adicionado:', entry);
