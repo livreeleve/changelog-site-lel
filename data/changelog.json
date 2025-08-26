@@ -2,6 +2,15 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
+      "id": "2025-08-26-004",
+      "date": "2025-08-26",
+      "type": "chore",
+      "title": "Migração AWS para otimização de performance",
+      "description": "Agora temos apenas uma instancia na AWS para economia e otimização. Estamos investindo 40% menos e com uma maquina muito melhor, onde todos os apps e integração estão hospedados.",
+      "author": "Victor Derrihu, Wanderson da Costa",
+      "createdAt": "2025-08-26T12:35:42.859Z"
+    },
+    {
       "id": "2025-08-26-003",
       "date": "2025-08-26",
       "type": "fix",
