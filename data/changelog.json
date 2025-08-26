@@ -2,6 +2,15 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
+      "id": "2025-08-26-006",
+      "date": "2025-08-26",
+      "type": "fix",
+      "title": "Corrigido app de mover produtos para baixo",
+      "description": "O app de mover produtos para baixo automaticamente não estava funcionando e foi corrigido",
+      "author": "Wanderson da Costa",
+      "createdAt": "2025-08-26T12:44:26.638Z"
+    },
+    {
       "id": "2025-08-26-005",
       "date": "2025-08-26",
       "type": "chore",
