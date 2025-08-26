@@ -2,6 +2,15 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
+      "id": "2025-08-26-007",
+      "date": "2025-08-26",
+      "type": "feature",
+      "title": "Redirecionar buscas sobre pedido para os pedidos",
+      "description": "Agora, se a pessoa buscar uma lista de termos, como: meus pedidos, pedidos e vários outros, ela será redirecionada para os pedidos dela no site",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2025-08-26T12:47:14.741Z"
+    },
+    {
       "id": "2025-08-26-006",
       "date": "2025-08-26",
       "type": "fix",
