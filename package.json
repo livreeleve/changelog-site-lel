@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "add:fix": "node scripts/add-entry.mjs --type fix",
-    "add:feature": "node scripts/add-entry.mjs --type feature",
-    "add:chore": "node scripts/add-entry.mjs --type chore"
+    "add:feature": "node scripts/add-entry.mjs --type=feature",
+    "add:fix": "node scripts/add-entry.mjs --type=fix",
+    "add:chore": "node scripts/add-entry.mjs --type=chore"
   },
   "keywords": [],
   "author": "",
