@@ -2,6 +2,42 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
+      "id": "2025-08-26-012",
+      "date": "2025-08-26",
+      "type": "fix",
+      "title": "Correção do espaçamento de paragrafos descrição do produto",
+      "description": "Laís tinha relatado esse problema e agora foi corrigido, mantendo um visual mais limpo e agradavel",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-08-26T13:23:01.494Z"
+    },
+    {
+      "id": "2025-08-26-011",
+      "date": "2025-08-26",
+      "type": "feature",
+      "title": "Migração da lib de carrosseis do site",
+      "description": "Migramos do Swiper para o Emblar para uma melhora de performance e manutenibilidade",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-08-26T13:21:33.241Z"
+    },
+    {
+      "id": "2025-08-26-010",
+      "date": "2025-08-26",
+      "type": "fix",
+      "title": "Reativação do botão de perguntas do produto",
+      "description": "Depois de uma atualização, o botão de perguntas do produto foi removido e agora está ativo novamente",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-08-26T13:19:45.514Z"
+    },
+    {
+      "id": "2025-08-26-009",
+      "date": "2025-08-26",
+      "type": "chore",
+      "title": "Padronização da fonte do site",
+      "description": "A fonte do site foi padronizada para Gottam para uma melhor leitura e identidade. Também aplicamos letter spacing e contrastes",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-08-26T13:17:47.507Z"
+    },
+    {
       "id": "2025-08-26-008",
       "date": "2025-08-26",
       "type": "feature",
