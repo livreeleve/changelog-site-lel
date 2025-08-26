@@ -8,6 +8,14 @@
       "title": "Criado histórico na busca do site",
       "description": "Um histórico de busca na busca do site, onde aparecem os 4 últimos termos buscados",
       "author": "Gustavo Fagundes"
+    },
+    {
+      "id": "2025-08-26-01",
+      "date": "2025-08-26",
+      "type": "chore",
+      "title": "Limitação do zoom na página de produtos",
+      "description": "O Zoom na página de produtos foi limitado para evitar que o usuário dê zoom demais e perca a referência do produto",
+      "author": "Gustavo Fagundes"
     }
   ]
 }
