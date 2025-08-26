@@ -8,95 +8,226 @@
     <style>
       :root {
         --bg: #0f0f12;
-        --card: #15161a;
+        --card: #16171c;
         --text: #e7e7ea;
         --muted: #a1a1aa;
         --primary: #8b5cf6;
-        --gray: #26272b;
-        --border: #2f3036;
+        --gray: #23242a;
+        --border: #2c2e34;
         --ok: #10b981;
         --warn: #f59e0b;
         --err: #ef4444;
         --radius: 16px;
+        --radius-lg: 20px;
+        --shadow: 0 10px 25px rgba(0,0,0,.35);
       }
+
       * { box-sizing: border-box; }
       html, body { height: 100%; }
       body {
         margin: 0;
         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-        background: radial-gradient(1200px 1200px at 10% -10%, #1b1c21 0%, var(--bg) 50%);
+        background: radial-gradient(1200px 1200px at 10% -10%, #1b1c21 0%, var(--bg) 60%);
         color: var(--text);
       }
-      .containerWM { max-width: 920px; margin: 40px auto; padding: 0 16px; }
-      .headerWM { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
-      .titleWM { font-size: 28px; font-weight: 700; letter-spacing: 0.3px; }
-      .filtersWM { display: flex; gap: 10px; flex-wrap: wrap; }
+
+      .containerWM { max-width: 1100px; margin: 28px auto 40px; padding: 0 16px; }
+      .headerWM {
+        display: grid; gap: 14px;
+        grid-template-columns: 1fr;
+        margin-bottom: 16px;
+      }
+      @media (min-width: 800px) {
+        .headerWM { grid-template-columns: 1fr auto; align-items: end; }
+      }
+
+      .titleWrapWM { display: grid; gap: 6px; }
+      .titleWM { font-size: clamp(22px, 2.4vw, 32px); font-weight: 800; letter-spacing: .3px; }
+      .subtitleWM { color: var(--muted); font-size: 13px; }
+
+      .filtersWM {
+        display: flex; gap: 8px; flex-wrap: wrap; align-items: center; justify-content: flex-start;
+      }
       .selectWM, .searchWM {
         background: var(--card);
         border: 1px solid var(--border);
         color: var(--text);
         padding: 10px 12px; border-radius: 10px; outline: none;
       }
-      .searchWM { width: 260px; }
+      .selectWM { min-width: 160px; }
+      .searchWM { width: min(360px, 60vw); }
+
+      .pageSizeWM { min-width: 120px; }
+
+      .toolbarWM {
+        display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: space-between;
+        margin: 10px 0 16px;
+      }
+      .countWM { color: var(--muted); font-size: 13px; }
+
+      .listWM { display: grid; gap: 12px; }
+      .groupWM { margin-top: 20px; }
+      .groupTitleWM { font-size: 14px; color: var(--muted); margin: 8px 0 14px; text-transform: capitalize; }
+
+      .itemWM {
+        background: linear-gradient(180deg, var(--card), #121318);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px;
+        display: grid; gap: 10px;
+        transition: transform .12s ease, border-color .12s ease;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      .itemWM:hover { transform: translateY(-1px); border-color: #3b3d46; }
+      .itemHeaderWM { display: flex; align-items: center; gap: 10px; justify-content: space-between; }
+      .itemTitleWM { font-weight: 700; line-height: 1.25; font-size: 16px; }
+      .itemMetaWM { color: var(--muted); font-size: 12px; }
+      .linksWM { display: flex; gap: 8px; flex-wrap: wrap; }
+      .linkWM { font-size: 12px; text-decoration: none; color: var(--text); opacity: 0.9; border: 1px dashed var(--border); padding: 4px 8px; border-radius: 8px; }
+
       .badgeWM {
-        display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600;
+        display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700;
         background: var(--gray); border: 1px solid var(--border); color: var(--muted);
       }
       .badge-feature { color: #d6bbfc; border-color: #7c3aed; }
       .badge-fix { color: #fecaca; border-color: var(--err); }
       .badge-chore { color: #fde68a; border-color: var(--warn); }
-      .listWM { display: grid; gap: 12px; }
-      .groupWM { margin-top: 24px; }
-      .groupTitleWM { font-size: 14px; color: var(--muted); margin: 8px 0 14px; text-transform: capitalize; }
-      .itemWM {
-        background: linear-gradient(180deg, var(--card), #121318);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 16px; display: grid; gap: 8px; transition: transform .12s ease;
+
+      .emptyWM { text-align: center; opacity: .75; padding: 40px 0; }
+
+      /* Pager */
+      .pagerWM { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 18px; }
+      .btnPagerWM {
+        background: var(--card); color: var(--text);
+        border: 1px solid var(--border); border-radius: 10px;
+        padding: 8px 12px; font-size: 13px; cursor: pointer;
       }
-      .itemWM:hover { transform: translateY(-1px); }
-      .itemHeaderWM { display: flex; align-items: center; gap: 10px; justify-content: space-between; }
-      .itemTitleWM { font-weight: 600; line-height: 1.2; }
-      .itemMetaWM { color: var(--muted); font-size: 12px; }
-      .linksWM { display: flex; gap: 8px; flex-wrap: wrap; }
-      .linkWM { font-size: 12px; text-decoration: none; color: var(--text); opacity: 0.9; border: 1px dashed var(--border); padding: 4px 8px; border-radius: 8px; }
-      .footerWM { margin-top: 36px; color: var(--muted); font-size: 13px; }
-      .emptyWM { text-align: center; opacity: .7; padding: 40px 0; }
+      .btnPagerWM[disabled] { opacity: .5; cursor: not-allowed; }
+      .btnPageNumWM { min-width: 40px; text-align: center; }
+      .btnActiveWM { border-color: var(--primary); box-shadow: 0 0 0 1px rgba(139,92,246,.35) inset; }
+
+      /* Modal */
+      .modalOverlayWM {
+        position: fixed; inset: 0; display: none;
+        align-items: center; justify-content: center;
+        background: rgba(0,0,0,.6); backdrop-filter: blur(2px);
+        padding: 20px; z-index: 50;
+      }
+      .modalOverlayWM[aria-hidden="false"] { display: flex; }
+      .modalWM {
+        width: min(860px, 96vw);
+        max-height: 92vh; overflow: auto;
+        background: linear-gradient(180deg, #1b1c22, #111218);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow);
+        padding: 18px 18px 20px;
+        display: grid; gap: 12px;
+      }
+      .modalHeaderWM { display: grid; gap: 8px; }
+      .modalTitleRowWM { display: flex; gap: 10px; justify-content: space-between; align-items: center; }
+      .modalTitleWM { font-size: clamp(18px, 2.2vw, 22px); font-weight: 800; }
+      .modalMetaWM { color: var(--muted); font-size: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+      .modalBodyWM { font-size: 15px; line-height: 1.6; }
+      .modalLinksWM { display: flex; gap: 8px; flex-wrap: wrap; }
+      .modalActionsWM { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }
+
+      .btnWM {
+        background: var(--gray); color: var(--text);
+        border: 1px solid var(--border); border-radius: 10px;
+        padding: 10px 12px; font-size: 14px; cursor: pointer;
+      }
+      .btnWM:hover { border-color: #3b3d46; }
+      .btnPrimaryWM { border-color: var(--primary); }
+      .btnDangerWM { border-color: var(--err); }
+
+      .modalCloseWM {
+        background: transparent; border: 1px solid var(--border); border-radius: 10px;
+        color: var(--text); width: 36px; height: 36px; cursor: pointer;
+        display: grid; place-items: center;
+      }
+
+      .noScrollWM { overflow: hidden; }
+
+      @media (max-width: 640px) {
+        .itemTitleWM { font-size: 15px; }
+        .modalWM { padding: 16px; }
+        .searchWM { width: 100%; }
+      }
     </style>
   </head>
   <body>
-    <main class="containerWM">
+    <main id="appRootWM" class="containerWM">
       <header class="headerWM">
-        <div>
+        <div class="titleWrapWM">
           <h1 class="titleWM">Changelog — Livre e Leve</h1>
-          <div class="itemMetaWM">Lançamentos, melhorias e correções do site.</div>
+          <div class="subtitleWM">Lançamentos, melhorias e correções do site.</div>
         </div>
+
         <div class="filtersWM">
-          <select id="typeFilter" class="selectWM">
+          <select id="typeFilterWM" class="selectWM">
             <option value="all">Tipo: Todos</option>
             <option value="feature">Novidades</option>
             <option value="fix">Correções</option>
             <option value="chore">Tarefas</option>
           </select>
-          <input id="searchInput" class="searchWM" type="search" placeholder="Buscar… (título, descrição, autor)" />
+
+          <input id="searchInputWM" class="searchWM" type="search" placeholder="Buscar… (título, descrição, autor)" />
+
+          <select id="pageSizeWM" class="selectWM pageSizeWM" title="Itens por página">
+            <option value="5">5 por página</option>
+            <option value="10">10 por página</option>
+            <option value="20">20 por página</option>
+          </select>
         </div>
       </header>
 
-      <section id="list" class="listWM" aria-live="polite"></section>
+      <div class="toolbarWM">
+        <div id="countWM" class="countWM"></div>
+        <div id="activeFilterWM" class="countWM"></div>
+      </div>
 
-      <footer class="footerWM">
-        <span id="count"></span>
-      </footer>
+      <section id="listWM" class="listWM" aria-live="polite"></section>
+
+      <nav id="pagerWM" class="pagerWM" aria-label="Paginação"></nav>
     </main>
+
+    <!-- Modal -->
+    <div id="modalOverlayWM" class="modalOverlayWM" aria-hidden="true">
+      <div class="modalWM" role="dialog" aria-modal="true" aria-labelledby="modalTitleWM" aria-describedby="modalDescWM">
+        <div class="modalHeaderWM">
+          <div class="modalTitleRowWM">
+            <span id="modalBadgeWM" class="badgeWM">Tipo</span>
+            <button id="modalCloseWM" class="modalCloseWM" aria-label="Fechar">✕</button>
+          </div>
+          <div id="modalTitleWM" class="modalTitleWM">Título</div>
+          <div id="modalMetaWM" class="modalMetaWM"></div>
+        </div>
+        <div id="modalDescWM" class="modalBodyWM"></div>
+        <div id="modalLinksWM" class="modalLinksWM"></div>
+        <div class="modalActionsWM">
+          <button id="copyLinkWM" class="btnWM btnPrimaryWM" type="button">Copiar link</button>
+          <button id="closeBottomWM" class="btnWM" type="button">Fechar</button>
+        </div>
+      </div>
+    </div>
 
     <script>
       (function () {
-        const state = { entries: [], filtered: [] };
+        const state = {
+          entries: [],
+          filtered: [],
+          page: 1,
+          pageSize: 10,
+        };
+
         const dateFmt = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeZone: 'America/Sao_Paulo' });
 
+        // ---------- Utils ----------
         function escapeHtml(s) {
           const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
-          return String(s).replace(/[&<>"']/g, (m) => map[m]);
+          return String(s ?? '').replace(/[&<>"']/g, (m) => map[m]);
         }
 
         function labelForType(t) {
@@ -109,14 +240,35 @@
         }
 
         function sortDesc(a, b) {
-          // date DESC → time DESC → createdAt DESC
           return (b.date || '').localeCompare(a.date || '') ||
                  (b.time || '00:00:00').localeCompare(a.time || '00:00:00') ||
                  (b.createdAt || '').localeCompare(a.createdAt || '');
         }
 
+        function qs(id) { return document.getElementById(id); }
+
+        function getQueryParams() {
+          const u = new URL(window.location.href);
+          return {
+            page: Number(u.searchParams.get('page') || '1'),
+            q: u.searchParams.get('q') || '',
+            type: u.searchParams.get('type') || 'all',
+            size: Number(u.searchParams.get('size') || '10'),
+          };
+        }
+
+        function pushQuery(params) {
+          const u = new URL(window.location.href);
+          if (params.page !== undefined) u.searchParams.set('page', String(params.page));
+          if (params.q !== undefined) u.searchParams.set('q', params.q);
+          if (params.type !== undefined) u.searchParams.set('type', params.type);
+          if (params.size !== undefined) u.searchParams.set('size', String(params.size));
+          history.replaceState(null, '', u);
+        }
+
+        // ---------- Data ----------
         async function loadData() {
-          const list = document.getElementById('list');
+          const list = qs('listWM');
           try {
             const res = await fetch('data/changelog.json', { cache: 'no-store' });
             if (!res.ok) throw new Error('Falha ao carregar /data/changelog.json (' + res.status + ')');
@@ -137,93 +289,304 @@
               })
               .sort(sortDesc);
 
-            state.filtered = state.entries.slice();
-            render();
+            const qp = getQueryParams();
+            state.page = Math.max(1, qp.page);
+            state.pageSize = [10, 20, 50].includes(qp.size) ? qp.size : 10;
+            qs('pageSizeWM').value = String(state.pageSize);
+            qs('typeFilterWM').value = qp.type || 'all';
+            qs('searchInputWM').value = qp.q || '';
+
+            applyFilters(false);
+            maybeOpenFromHash();
           } catch (err) {
             console.error(err);
             list.innerHTML = '<div class="emptyWM">' + escapeHtml(err.message || 'Erro ao carregar dados') + '</div>';
-            document.getElementById('count').textContent = '0 itens';
+            qs('countWM').textContent = '0 itens';
           }
         }
 
-        function render() {
-          const list = document.getElementById('list');
-          const count = document.getElementById('count');
-          list.innerHTML = '';
+        function applyFilters(resetPage = true) {
+          const type = qs('typeFilterWM').value;
+          const q = qs('searchInputWM').value.toLowerCase().trim();
 
-          if (!state.filtered.length) {
-            list.innerHTML = '<div class="emptyWM">Nenhum registro encontrado.</div>';
-            count.textContent = '0 itens';
-            return;
-          }
-
-          // Agrupa por YYYY-MM com keys ordenadas DESC
-          const groups = {};
-          for (const item of state.filtered) {
-            const key = (item.date || '').slice(0, 7); // YYYY-MM
-            if (!groups[key]) groups[key] = [];
-            groups[key].push(item);
-          }
-          const sortedKeys = Object.keys(groups).sort((a, b) => b.localeCompare(a));
-
-          for (const key of sortedKeys) {
-            const parts = key.split('-');
-            const y = Number(parts[0]);
-            const m = Number(parts[1]) - 1;
-            const monthTitle = new Date(y, m, 1).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
-
-            const groupEl = document.createElement('div');
-            groupEl.className = 'groupWM';
-            groupEl.innerHTML = '<div class="groupTitleWM">' + monthTitle + '</div>';
-
-            for (const it of groups[key]) {
-              const badgeCls =
-                it.type === 'fix' ? 'badgeWM badge-fix' :
-                it.type === 'feature' ? 'badgeWM badge-feature' :
-                'badgeWM badge-chore';
-
-              const links = Array.isArray(it.links)
-                ? it.links.map((l) =>
-                    '<a class="linkWM" href="' + l.url + '" target="_blank" rel="noopener noreferrer">' +
-                    escapeHtml(l.label || 'Ref') + '</a>'
-                  ).join('')
-                : '';
-
-              const el = document.createElement('article');
-              el.className = 'itemWM';
-              el.innerHTML =
-                '<div class="itemHeaderWM">' +
-                  '<div class="itemTitleWM">' + escapeHtml(it.title || '') + '</div>' +
-                  '<span class="' + badgeCls + '">' + labelForType(it.type) + '</span>' +
-                '</div>' +
-                '<div class="itemMetaWM">' + dateFmt.format(it.dateObj) + ' · ' + escapeHtml(it.author || 'Equipe') + '</div>' +
-                '<div>' + escapeHtml(it.description || '') + '</div>' +
-                (links ? '<div class="linksWM">' + links + '</div>' : '');
-
-              groupEl.appendChild(el);
-            }
-            list.appendChild(groupEl);
-          }
-
-          count.textContent = state.filtered.length + ' ' + (state.filtered.length === 1 ? 'item' : 'itens');
-        }
-
-        function applyFilters() {
-          const type = document.getElementById('typeFilter').value;
-          const q = (document.getElementById('searchInput').value || '').toLowerCase().trim();
           state.filtered = state.entries.filter((e) => {
             const typeOk = type === 'all' ? true : e.type === type;
             const text = ((e.title || '') + ' ' + (e.description || '') + ' ' + (e.author || '')).toLowerCase();
             const qOk = q ? text.includes(q) : true;
             return typeOk && qOk;
           });
-          // já está ordenado
+
+          if (resetPage) state.page = 1;
+
+          pushQuery({ page: state.page, q, type, size: state.pageSize });
+
           render();
         }
 
-        document.getElementById('typeFilter').addEventListener('change', applyFilters);
-        document.getElementById('searchInput').addEventListener('input', applyFilters);
+        // ---------- Render ----------
+        function render() {
+          const list = qs('listWM');
+          const count = qs('countWM');
+          const activeFilter = qs('activeFilterWM');
+          list.innerHTML = '';
 
+          const total = state.filtered.length;
+          count.textContent = `${total} ${total === 1 ? 'item' : 'itens'}`;
+
+          const type = qs('typeFilterWM').value;
+          const q = qs('searchInputWM').value.trim();
+          const filtersTxt = [];
+          if (type !== 'all') filtersTxt.push(`Tipo: ${labelForType(type)}`);
+          if (q) filtersTxt.push(`Busca: “${escapeHtml(q)}”`);
+          activeFilter.textContent = filtersTxt.join(' — ');
+
+          // paginação
+          const totalPages = Math.max(1, Math.ceil(total / state.pageSize));
+          if (state.page > totalPages) state.page = totalPages;
+          const start = (state.page - 1) * state.pageSize;
+          const pageItems = state.filtered.slice(start, start + state.pageSize);
+
+          if (!pageItems.length) {
+            list.innerHTML = '<div class="emptyWM">Nenhum registro encontrado.</div>';
+          } else {
+            // agrupa por mês/ano apenas dos itens da página
+            const groups = {};
+            for (const item of pageItems) {
+              const key = (item.date || '').slice(0, 7); // YYYY-MM
+              if (!groups[key]) groups[key] = [];
+              groups[key].push(item);
+            }
+            const sortedKeys = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+
+            for (const key of sortedKeys) {
+              const [y, m] = key.split('-');
+              const monthTitle = new Date(Number(y), Number(m) - 1, 1)
+                .toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+
+              const groupEl = document.createElement('div');
+              groupEl.className = 'groupWM';
+              groupEl.innerHTML = '<div class="groupTitleWM">' + monthTitle + '</div>';
+
+              for (const it of groups[key]) {
+                const badgeCls =
+                  it.type === 'fix' ? 'badgeWM badge-fix' :
+                  it.type === 'feature' ? 'badgeWM badge-feature' :
+                  'badgeWM badge-chore';
+
+                const links = Array.isArray(it.links)
+                  ? it.links.map((l) =>
+                      '<a class="linkWM" href="' + l.url + '" target="_blank" rel="noopener noreferrer">' +
+                      escapeHtml(l.label || 'Ref') + '</a>'
+                    ).join('')
+                  : '';
+
+                const el = document.createElement('article');
+                el.className = 'itemWM';
+                el.setAttribute('data-id', it.id || '');
+                el.innerHTML =
+                  '<div class="itemHeaderWM">' +
+                    '<div class="itemTitleWM">' + escapeHtml(it.title || '') + '</div>' +
+                    '<span class="' + badgeCls + '">' + labelForType(it.type) + '</span>' +
+                  '</div>' +
+                  '<div class="itemMetaWM">' + dateFmt.format(it.dateObj) + ' · ' + escapeHtml(it.author || 'Equipe') + '</div>' +
+                  (it.description ? ('<div>' + escapeHtml(it.description) + '</div>') : '') +
+                  (links ? '<div class="linksWM">' + links + '</div>' : '');
+
+                // Abre modal ao clicar
+                el.addEventListener('click', () => openModal(it));
+                groupEl.appendChild(el);
+              }
+              list.appendChild(groupEl);
+            }
+          }
+
+          renderPager(totalPages);
+        }
+
+        function renderPager(totalPages) {
+          const pager = qs('pagerWM');
+          pager.innerHTML = '';
+          if (totalPages <= 1) return;
+
+          function addBtn(label, disabled, onClick, extraClass = '') {
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'btnPagerWM ' + extraClass;
+            b.textContent = label;
+            if (disabled) b.disabled = true;
+            if (onClick) b.addEventListener('click', onClick);
+            pager.appendChild(b);
+            return b;
+          }
+
+          addBtn('‹ Anterior', state.page <= 1, () => { state.page--; pushQuery({ page: state.page }); render(); });
+
+          // janela de páginas (máx 7 números)
+          const maxBtns = 7;
+          let start = Math.max(1, state.page - 3);
+          let end = Math.min(totalPages, start + maxBtns - 1);
+          start = Math.max(1, end - maxBtns + 1);
+
+          for (let p = start; p <= end; p++) {
+            const btn = addBtn(String(p), false, () => { state.page = p; pushQuery({ page: state.page }); render(); }, 'btnPageNumWM');
+            if (p === state.page) btn.classList.add('btnActiveWM');
+          }
+
+          addBtn('Próxima ›', state.page >= totalPages, () => { state.page++; pushQuery({ page: state.page }); render(); });
+        }
+
+        // ---------- Modal ----------
+        const overlay = qs('modalOverlayWM');
+        const modalClose = qs('modalCloseWM');
+        const modalTitle = qs('modalTitleWM');
+        const modalBadge = qs('modalBadgeWM');
+        const modalMeta  = qs('modalMetaWM');
+        const modalDesc  = qs('modalDescWM');
+        const modalLinks = qs('modalLinksWM');
+        const copyLinkBtn = qs('copyLinkWM');
+        const closeBottom = qs('closeBottomWM');
+        let lastFocus = null;
+
+        function openModal(entry) {
+          lastFocus = document.activeElement;
+
+          // conteúdo
+          modalBadge.className = 'badgeWM ' + (entry.type === 'fix' ? 'badge-fix' : entry.type === 'feature' ? 'badge-feature' : 'badge-chore');
+          modalBadge.textContent = labelForType(entry.type);
+          modalTitle.textContent = entry.title || '(Sem título)';
+          modalMeta.textContent = [
+            dateFmt.format(entry.dateObj),
+            entry.author ? `Autor: ${entry.author}` : 'Equipe',
+            entry.id ? `ID: ${entry.id}` : ''
+          ].filter(Boolean).join(' — ');
+
+          modalDesc.textContent = '';
+          if (entry.description) {
+            modalDesc.textContent = entry.description;
+          } else {
+            modalDesc.textContent = '(Sem descrição)';
+          }
+
+          modalLinks.innerHTML = '';
+          if (Array.isArray(entry.links) && entry.links.length) {
+            for (const l of entry.links) {
+              const a = document.createElement('a');
+              a.className = 'btnWM';
+              a.href = l.url;
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.textContent = l.label || 'Ref';
+              modalLinks.appendChild(a);
+            }
+          }
+
+          // hash para deep-link
+          if (entry.id) {
+            const u = new URL(window.location.href);
+            u.hash = entry.id;
+            history.replaceState(null, '', u);
+          }
+
+          overlay.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('noScrollWM');
+
+          // foco
+          setTimeout(() => {
+            modalClose.focus();
+            trapFocusInit();
+          }, 0);
+
+          // copiar link
+          copyLinkBtn.onclick = async () => {
+            try {
+              await navigator.clipboard.writeText(window.location.href);
+              copyLinkBtn.textContent = 'Link copiado!';
+              setTimeout(() => (copyLinkBtn.textContent = 'Copiar link'), 1200);
+            } catch {
+              copyLinkBtn.textContent = 'Falhou :(';
+              setTimeout(() => (copyLinkBtn.textContent = 'Copiar link'), 1200);
+            }
+          };
+        }
+
+        function closeModal() {
+          overlay.setAttribute('aria-hidden', 'true');
+          document.body.classList.remove('noScrollWM');
+          removeHash();
+          if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+        }
+
+        function removeHash() {
+          const u = new URL(window.location.href);
+          u.hash = '';
+          history.replaceState(null, '', u);
+        }
+
+        overlay.addEventListener('click', (e) => {
+          if (e.target === overlay) closeModal();
+        });
+        modalClose.addEventListener('click', closeModal);
+        closeBottom.addEventListener('click', closeModal);
+        window.addEventListener('keydown', (e) => {
+          if (overlay.getAttribute('aria-hidden') === 'false' && e.key === 'Escape') {
+            closeModal();
+          }
+        });
+
+        // focus trap
+        let trapHandler = null;
+        function trapFocusInit() {
+          const focusable = overlay.querySelectorAll('a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])');
+          const list = Array.from(focusable).filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
+          if (!list.length) return;
+          const first = list[0], last = list[list.length - 1];
+
+          trapHandler = (e) => {
+            if (e.key !== 'Tab') return;
+            if (e.shiftKey) {
+              if (document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+              }
+            } else {
+              if (document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+              }
+            }
+          };
+          overlay.addEventListener('keydown', trapHandler);
+        }
+        function trapFocusDestroy() {
+          if (trapHandler) overlay.removeEventListener('keydown', trapHandler);
+          trapHandler = null;
+        }
+        overlay.addEventListener('transitionend', trapFocusDestroy);
+
+        function maybeOpenFromHash() {
+          const id = (window.location.hash || '').replace(/^#/, '');
+          if (!id) return;
+          const entry = state.entries.find(e => e.id === id);
+          if (entry) openModal(entry);
+        }
+
+        // ---------- Events ----------
+        qs('typeFilterWM').addEventListener('change', () => applyFilters(true));
+        qs('pageSizeWM').addEventListener('change', () => {
+          state.pageSize = Number(qs('pageSizeWM').value) || 10;
+          state.page = 1;
+          pushQuery({ size: state.pageSize, page: state.page });
+          render();
+        });
+
+        // busca com leve debounce
+        let t = null;
+        qs('searchInputWM').addEventListener('input', () => {
+          clearTimeout(t);
+          t = setTimeout(() => applyFilters(true), 180);
+        });
+
+        // inicializa
         loadData();
       })();
     </script>
