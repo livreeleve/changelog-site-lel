@@ -2,6 +2,15 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
+      "id": "2025-08-26-008",
+      "date": "2025-08-26",
+      "type": "feature",
+      "title": "Automatizado ativação de produtos no app avise-me",
+      "description": "Agora, quando um produto volta para o estoque, se ele estiver inativo o aplicativo do Avise-me reativa ele automaticamente para as pessoas que receberam o e-mail e WhatsApp poderem acessar sem caírem na página 404",
+      "author": "Victor Derrihu, Gustavo Fagundes",
+      "createdAt": "2025-08-26T12:50:41.263Z"
+    },
+    {
       "id": "2025-08-26-007",
       "date": "2025-08-26",
       "type": "feature",
