@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "add:feature": "node scripts/add-entry.mjs --type=feature",
-    "add:fix": "node scripts/add-entry.mjs --type=fix",
-    "add:chore": "node scripts/add-entry.mjs --type=chore"
+    "feat": "node scripts/cl.mjs feature",
+    "fix": "node scripts/cl.mjs fix",
+    "chore": "node scripts/cl.mjs chore",
+    "new": "node scripts/new-entry.mjs",
+    "last": "node scripts/add-from-last.mjs"
   },
   "keywords": [],
   "author": "",
