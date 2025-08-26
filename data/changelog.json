@@ -2,6 +2,15 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
+      "id": "2025-08-26-005",
+      "date": "2025-08-26",
+      "type": "chore",
+      "title": "Unificação do botão de WhatsApp e botão de ajuda",
+      "description": "O botão de WhatsApp foi integrado ao botão de ajuda do site. Também foi melhorado a experiência visual e adicionado o link de grupo VIP",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2025-08-26T12:38:51.063Z"
+    },
+    {
       "id": "2025-08-26-004",
       "date": "2025-08-26",
       "type": "chore",
