@@ -1,51 +1,5 @@
 {
   "project": "Livre e Leve — Site",
   "entries": [
-    {
-      "id": "2025-08-26-01",
-      "date": "2025-08-26",
-      "type": "fix",
-      "title": "Corrige seleção de variant no kit (Safari)",
-      "description": "Ajuste no listener para evitar envio do primeiro variant em kits com múltiplas peças.",
-      "author": "Lucas",
-      "links": [
-        {
-          "label": "PR #312",
-          "url": "https://github.com/org/repo/pull/312"
-        }
-      ]
-    },
-    {
-      "id": "2025-08-26-04",
-      "date": "2025-08-26",
-      "type": true,
-      "title": "Adicionado nova lib de carrossel Embla",
-      "description": "",
-      "author": "Equipe"
-    },
-    {
-      "id": "2025-08-26-05",
-      "date": "2025-08-26",
-      "type": true,
-      "title": "Alguma coisa",
-      "description": "algismasd",
-      "author": "Gustavo"
-    },
-    {
-      "id": "2025-08-22-01",
-      "date": "2025-08-22",
-      "type": "feature",
-      "title": "Novo carrossel de Prova Social",
-      "description": "3 cards no desktop e 1 no mobile, com lazy-loading e LCP otimizado.",
-      "author": "Equipe"
-    },
-    {
-      "id": "2025-08-18-01",
-      "date": "2025-08-18",
-      "type": "chore",
-      "title": "Atualiza dependências do front",
-      "description": "Upgrade de bibliotecas menores e limpeza de warnings.",
-      "author": "DevOps"
-    }
   ]
 }
