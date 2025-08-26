@@ -1,79 +1,192 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Changelog — Livre e Leve</title>
-<meta name="description" content="Atualizações do site da Livre e Leve: lançamentos, melhorias e correções de bugs." />
-<style>
-:root {
---bg: #0f0f12; /* dark */
---card: #15161a;
---text: #e7e7ea;
---muted: #a1a1aa;
---primary: #8b5cf6; /* roxo */
---gray: #26272b;
---border: #2f3036;
---ok: #10b981;
---warn: #f59e0b;
---err: #ef4444;
---radius: 16px;
-}
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
-margin: 0;
-font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-background: radial-gradient(1200px 1200px at 10% -10%, #1b1c21 0%, var(--bg) 50%);
-color: var(--text);
-}
-.containerWM { max-width: 920px; margin: 40px auto; padding: 0 16px; }
-.headerWM { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
-.titleWM { font-size: 28px; font-weight: 700; letter-spacing: 0.3px; }
-.filtersWM { display: flex; gap: 10px; flex-wrap: wrap; }
-.selectWM, .searchWM {
-background: var(--card);
-border: 1px solid var(--border);
-color: var(--text);
-padding: 10px 12px; border-radius: 10px; outline: none;
-}
-.searchWM { width: 260px; }
-.badgeWM {
-display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600;
-background: var(--gray); border: 1px solid var(--border); color: var(--muted);
-}
-.badge-feature { color: #d6bbfc; border-color: #7c3aed; }
-.badge-fix { color: #fecaca; border-color: var(--err); }
-.badge-chore { color: #fde68a; border-color: var(--warn); }
-.listWM { display: grid; gap: 12px; }
-.groupWM { margin-top: 24px; }
-.groupTitleWM { font-size: 14px; color: var(--muted); margin: 8px 0 14px; }
-.itemWM {
-background: linear-gradient(180deg, var(--card), #121318);
-border: 1px solid var(--border);
-border-radius: var(--radius);
-padding: 16px; display: grid; gap: 8px; transition: transform .12s ease;
-}
-.itemWM:hover { transform: translateY(-1px); }
-.itemHeaderWM { display: flex; align-items: center; gap: 10px; justify-content: space-between; }
-.itemTitleWM { font-weight: 600; line-height: 1.2; }
-.itemMetaWM { color: var(--muted); font-size: 12px; }
-.linksWM { display: flex; gap: 8px; flex-wrap: wrap; }
-.linkWM { font-size: 12px; text-decoration: none; color: var(--text); opacity: 0.9; border: 1px dashed var(--border); padding: 4px 8px; border-radius: 8px; }
-.footerWM { margin-top: 36px; color: var(--muted); font-size: 13px; }
-.emptyWM { text-align: center; opacity: .7; padding: 40px 0; }
-</style>
-</head>
-<body>
-<main class="containerWM">
-<header class="headerWM">
-<div>
-<h1 class="titleWM">Changelog — Livre e Leve</h1>
-<div class="itemMetaWM">Lançamentos, melhorias e correções do site.</div>
-</div>
-<div class="filtersWM">
-<select id="typeFilter" class="selectWM">
-<option value="all">Tipo: Todos</option>
-<option value="feature">Novidades</option>
-<option value="fix">Correções</option>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Changelog — Livre e Leve</title>
+    <meta name="description" content="Atualizações do site da Livre e Leve: lançamentos, melhorias e correções de bugs." />
+    <style>
+      :root {
+        --bg: #0f0f12; /* dark */
+        --card: #15161a;
+        --text: #e7e7ea;
+        --muted: #a1a1aa;
+        --primary: #8b5cf6; /* roxo */
+        --gray: #26272b;
+        --border: #2f3036;
+        --ok: #10b981;
+        --warn: #f59e0b;
+        --err: #ef4444;
+        --radius: 16px;
+      }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: radial-gradient(1200px 1200px at 10% -10%, #1b1c21 0%, var(--bg) 50%);
+        color: var(--text);
+      }
+      .containerWM { max-width: 920px; margin: 40px auto; padding: 0 16px; }
+      .headerWM { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+      .titleWM { font-size: 28px; font-weight: 700; letter-spacing: 0.3px; }
+      .filtersWM { display: flex; gap: 10px; flex-wrap: wrap; }
+      .selectWM, .searchWM {
+        background: var(--card);
+        border: 1px solid var(--border);
+        color: var(--text);
+        padding: 10px 12px; border-radius: 10px; outline: none;
+      }
+      .searchWM { width: 260px; }
+      .badgeWM {
+        display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600;
+        background: var(--gray); border: 1px solid var(--border); color: var(--muted);
+      }
+      .badge-feature { color: #d6bbfc; border-color: #7c3aed; }
+      .badge-fix { color: #fecaca; border-color: var(--err); }
+      .badge-chore { color: #fde68a; border-color: var(--warn); }
+      .listWM { display: grid; gap: 12px; }
+      .groupWM { margin-top: 24px; }
+      .groupTitleWM { font-size: 14px; color: var(--muted); margin: 8px 0 14px; }
+      .itemWM {
+        background: linear-gradient(180deg, var(--card), #121318);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px; display: grid; gap: 8px; transition: transform .12s ease;
+      }
+      .itemWM:hover { transform: translateY(-1px); }
+      .itemHeaderWM { display: flex; align-items: center; gap: 10px; justify-content: space-between; }
+      .itemTitleWM { font-weight: 600; line-height: 1.2; }
+      .itemMetaWM { color: var(--muted); font-size: 12px; }
+      .linksWM { display: flex; gap: 8px; flex-wrap: wrap; }
+      .linkWM { font-size: 12px; text-decoration: none; color: var(--text); opacity: 0.9; border: 1px dashed var(--border); padding: 4px 8px; border-radius: 8px; }
+      .footerWM { margin-top: 36px; color: var(--muted); font-size: 13px; }
+      .emptyWM { text-align: center; opacity: .7; padding: 40px 0; }
+    </style>
+  </head>
+  <body>
+    <main class="containerWM">
+      <header class="headerWM">
+        <div>
+          <h1 class="titleWM">Changelog — Livre e Leve</h1>
+          <div class="itemMetaWM">Lançamentos, melhorias e correções do site.</div>
+        </div>
+        <div class="filtersWM">
+          <select id="typeFilter" class="selectWM">
+            <option value="all">Tipo: Todos</option>
+            <option value="feature">Novidades</option>
+            <option value="fix">Correções</option>
+            <option value="chore">Tarefas</option>
+          </select>
+          <input id="searchInput" class="searchWM" type="search" placeholder="Buscar… (título, descrição, autor)" />
+        </div>
+      </header>
+
+      <section id="list" class="listWM" aria-live="polite"></section>
+
+      <footer class="footerWM">
+        <span id="count"></span>
+      </footer>
+    </main>
+
+    <script>
+      const state = { entries: [], filtered: [] };
+      const dateFmt = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'medium', timeZone: 'America/Sao_Paulo' });
+
+      async function loadData() {
+        const res = await fetch('data/changelog.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('Falha ao carregar changelog.json');
+        const json = await res.json();
+        // Normaliza e ordena DESC por data
+        state.entries = (json.entries || []).map(e => ({
+          ...e,
+          dateObj: new Date(e.date + (e.time ? 'T' + e.time : 'T00:00:00'))
+        })).sort((a, b) => b.dateObj - a.dateObj);
+        state.filtered = [...state.entries];
+        render();
+      }
+
+      function render() {
+        const list = document.getElementById('list');
+        const count = document.getElementById('count');
+        list.innerHTML = '';
+
+        if (!state.filtered.length) {
+          list.innerHTML = `<div class="emptyWM">Nenhum registro encontrado.</div>`;
+          count.textContent = '0 itens';
+          return;
+        }
+
+        // Agrupa por mês/ano
+        const groups = state.filtered.reduce((acc, item) => {
+          const k = item.dateObj.getFullYear() + '-' + String(item.dateObj.getMonth()+1).padStart(2, '0');
+          (acc[k] ||= []).push(item);
+          return acc;
+        }, {});
+
+        const sortedKeys = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+
+        for (const key of sortedKeys) {
+          const [y, m] = key.split('-');
+          const monthTitle = new Date(Number(y), Number(m)-1, 1).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+
+          const groupEl = document.createElement('div');
+          groupEl.className = 'groupWM';
+          groupEl.innerHTML = `<div class="groupTitleWM">${monthTitle}</div>`;
+
+          for (const it of groups[key]) {
+            const badgeCls = it.type === 'fix' ? 'badgeWM badge-fix' : it.type === 'feature' ? 'badgeWM badge-feature' : 'badgeWM badge-chore';
+            const links = (it.links || []).map(l => `<a class="linkWM" href="${l.url}" target="_blank" rel="noopener noreferrer">${l.label}</a>`).join('');
+            const el = document.createElement('article');
+            el.className = 'itemWM';
+            el.innerHTML = `
+              <div class="itemHeaderWM">
+                <div class="itemTitleWM">${escapeHtml(it.title)}</div>
+                <span class="${badgeCls}">${labelForType(it.type)}</span>
+              </div>
+              <div class="itemMetaWM">${dateFmt.format(it.dateObj)} · ${it.author ? escapeHtml(it.author) : 'Equipe'}</div>
+              <div>${escapeHtml(it.description || '')}</div>
+              ${links ? `<div class="linksWM">${links}</div>` : ''}
+            `;
+            groupEl.appendChild(el);
+          }
+          list.appendChild(groupEl);
+        }
+
+        count.textContent = `${state.filtered.length} ${state.filtered.length === 1 ? 'item' : 'itens'}`;
+      }
+
+      function labelForType(t) {
+        switch (t) {
+          case 'feature': return 'Novidade';
+          case 'fix': return 'Correção';
+          case 'chore': return 'Tarefa';
+          default: return 'Outro';
+        }
+      }
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[m]));
+      }
+
+      function applyFilters() {
+        const type = document.getElementById('typeFilter').value;
+        const q = document.getElementById('searchInput').value.toLowerCase().trim();
+        state.filtered = state.entries.filter(e => {
+          const typeOk = type === 'all' ? true : e.type === type;
+          const text = (e.title + ' ' + (e.description||'') + ' ' + (e.author||'')).toLowerCase();
+          const qOk = q ? text.includes(q) : true;
+          return typeOk && qOk;
+        });
+        render();
+      }
+
+      document.getElementById('typeFilter').addEventListener('change', applyFilters);
+      document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+      loadData().catch(err => {
+        document.getElementById('list').innerHTML = `<div class="emptyWM">${escapeHtml(err.message)}</div>`;
+      });
+    </script>
+  </body>
 </html>
