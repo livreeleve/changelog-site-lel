@@ -10,11 +10,11 @@
       "author": "Gustavo Fagundes"
     },
     {
-      "id": "2025-08-26-01",
+      "id": "2025-08-26-02",
       "date": "2025-08-26",
       "type": "chore",
       "title": "Limitação do zoom na página de produtos",
-      "description": "O Zoom na página de produtos foi limitado para evitar que o usuário dê zoom demais e perca a referência do produto",
+      "description": "O zoom da página de produtos foi limitado para evitar que o usuário perca a referência do produto e a imagem fique com a qualidade muito baixa",
       "author": "Gustavo Fagundes"
     }
   ]
