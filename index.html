@@ -291,7 +291,7 @@
 
             const qp = getQueryParams();
             state.page = Math.max(1, qp.page);
-            state.pageSize = [10, 20, 50].includes(qp.size) ? qp.size : 10;
+            state.pageSize = [5, 10, 20].includes(qp.size) ? qp.size : 5;
             qs('pageSizeWM').value = String(state.pageSize);
             qs('typeFilterWM').value = qp.type || 'all';
             qs('searchInputWM').value = qp.q || '';
