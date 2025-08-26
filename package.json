@@ -1,0 +1,14 @@
+{
+  "name": "changelonglel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "add:fix": "node scripts/add-entry.mjs --type fix",
+    "add:feature": "node scripts/add-entry.mjs --type feature",
+    "add:chore": "node scripts/add-entry.mjs --type chore"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
