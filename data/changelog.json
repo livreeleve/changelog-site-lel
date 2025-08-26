@@ -24,6 +24,14 @@
       "author": "Equipe"
     },
     {
+      "id": "2025-08-26-05",
+      "date": "2025-08-26",
+      "type": true,
+      "title": "Alguma coisa",
+      "description": "algismasd",
+      "author": "Gustavo"
+    },
+    {
       "id": "2025-08-22-01",
       "date": "2025-08-22",
       "type": "feature",
