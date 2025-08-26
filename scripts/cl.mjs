@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import { buildEntry, getDefaultAuthor, isValidType, normalizeDate, upsertEntry } from './changelog-lib.mjs';
+import { buildEntry, getDefaultAuthor, isValidType, upsertEntry } from './changelog-lib.mjs';
 
 // Uso:
-// npm run feat "Título" "Descrição" ["Autor"] ["Link"] ["HH:MM:SS"] ["YYYY-MM-DD"]
-// npm run fix  ...
-// npm run chore ...
+// npm run feat  "Título" "Descrição" ["Autor"] ["Link"]
+// npm run fix   "Título" "Descrição" ["Autor"] ["Link"]
+// npm run chore "Título" "Descrição" ["Autor"] ["Link"]
 
-const [, , typeArg, title, description, authorArg, link, time, dateArg] = process.argv;
+const [, , typeArg, title, description, authorArg, link] = process.argv;
 
 if (!isValidType(typeArg)) {
   console.error('Tipo inválido. Use: feature | fix | chore');
@@ -17,16 +17,12 @@ if (!title) {
   process.exit(1);
 }
 
-const author = authorArg && authorArg.trim() ? authorArg : getDefaultAuthor();
-const date = normalizeDate(dateArg);
-
+const author = (authorArg && authorArg.trim()) ? authorArg : getDefaultAuthor();
 const entry = buildEntry({
   type: typeArg.toLowerCase(),
   title,
   description: description || '',
   author,
-  date,
-  time,
   link
 });
 

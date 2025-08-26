@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { buildEntry, getDefaultAuthor, isValidType, normalizeDate, upsertEntry } from './changelog-lib.mjs';
+import { buildEntry, getDefaultAuthor, isValidType, upsertEntry } from './changelog-lib.mjs';
 import readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 
@@ -20,11 +20,14 @@ async function ask(q, def = '') {
 
     const description = await ask('Descrição', '');
     const author = await ask('Autor', getDefaultAuthor());
-    const date = normalizeDate(await ask('Data (YYYY-MM-DD)', ''));
-    const time = await ask('Hora (HH:MM:SS)', '');
     const link = await ask('Link (opcional)', '');
 
-    const entry = buildEntry({ type, title, description, author, date, time: time || undefined, link: link || undefined });
+    // Data e hora são automáticas dentro de buildEntry()
+    const entry = buildEntry({
+      type, title, description, author,
+      link: link || undefined
+    });
+
     const saved = upsertEntry(entry);
     console.log('\n✅ Adicionado:', saved);
   } catch (e) {

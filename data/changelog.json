@@ -2,6 +2,16 @@
   "project": "Livre e Leve — Site",
   "entries": [
     {
+      "id": "2025-08-26-013",
+      "date": "2025-08-26",
+      "type": "feature",
+      "title": "Melhora visual nos botões de paginação das coleções",
+      "description": "Foi melhorado o visual dos botões de paginação das coleções, deixando mais intuitivo e com a identidade visual do tema",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-08-26T19:20:17.120Z",
+      "time": "16:00:00"
+    },
+    {
       "id": "2025-08-26-012",
       "date": "2025-08-26",
       "type": "fix",

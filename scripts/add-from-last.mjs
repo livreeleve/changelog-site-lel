@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 import { execSync } from 'node:child_process';
-import { buildEntry, getDefaultAuthor, isValidType, normalizeDate, upsertEntry } from './changelog-lib.mjs';
+import { buildEntry, getDefaultAuthor, isValidType, upsertEntry } from './changelog-lib.mjs';
 
 function getLastCommitMessage() {
   return execSync('git log -1 --pretty=%B', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
 }
 
 function parseCommit(msg) {
-  // Primeira linha: feat|fix|chore(scope)?: título
+  // Linha 1: feat|fix|chore(scope)?: título
   const [first, ...rest] = msg.split(/\r?\n/);
   const m = first.match(/^(feat|fix|chore)(?:\([^)]+\))?:\s*(.+)$/i);
   if (!m) return null;
@@ -31,14 +31,12 @@ try {
   }
 
   const author = getDefaultAuthor();
-  const date = normalizeDate('');
-
+  // Data/hora automáticas em buildEntry()
   const entry = buildEntry({
     type: parsed.type,
     title: parsed.title,
     description: parsed.description,
     author,
-    date,
     link: parsed.link
   });
 
