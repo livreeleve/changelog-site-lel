@@ -8,6 +8,14 @@
       "description": "Atualizamos o N8N para a versão mais recente, garantindo melhorias de desempenho e segurança na automação dos fluxos de trabalho.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-02T20:12:29.148Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "other",
+      "title": "Sistema de Cadastro de Funcionários - Livre e Leve",
+      "description": "Lançamos o novo Sistema de Cadastro de Funcionários, oferecendo um processo mais intuitivo, rápido e descomplicado.",
+      "author": "Victor Derrihu",
+      "createdAt": "2025-09-02T20:13:29.984Z"
     }
   ]
 }
