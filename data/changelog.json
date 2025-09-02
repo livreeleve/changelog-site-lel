@@ -118,14 +118,6 @@
       "description": "Um histórico na busca do site, onde aparecem os 4 últimos termos buscados",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-08-26T12:25:13.116Z"
-    },
-    {
-      "date": "2025-09-02",
-      "type": "Fix, feature",
-      "title": "Criando site novo",
-      "description": "Lançamento oficial do novo website da empresa, com design moderno e melhorias significativas na usabilidade.",
-      "author": "",
-      "createdAt": "2025-09-02T17:50:29.000Z"
     }
   ]
 }
