@@ -126,6 +126,14 @@
       "description": "Atualização do N8N para a versão mais recente. Esta melhoria traz otimizações de performance e novas funcionalidades para nossos fluxos de trabalho de automação.",
       "author": "",
       "createdAt": "2025-09-02T18:14:31.338Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "Fix, feature",
+      "title": "Consertar bug no compre junto",
+      "description": "Resolvido um problema na funcionalidade \"Compre Junto\". Agora, a compra de produtos em conjunto funciona corretamente, melhorando a experiência do usuário.",
+      "author": "",
+      "createdAt": "2025-09-02T18:48:02.548Z"
     }
   ]
 }
