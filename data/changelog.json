@@ -182,6 +182,14 @@
       "description": "Uma nova funcionalidade foi desenvolvida e integrada com sucesso.\nEssa adição visa aprimorar sua experiência e otimizar processos.\nExplore as novidades e aproveite os benefícios implementados.",
       "author": "Lucas de Carvalho, Victor Derrihu",
       "createdAt": "2025-09-02T20:09:11.948Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "other",
+      "title": "Criar alguma coisa",
+      "description": "Novo elemento desenvolvido e implementado.",
+      "author": "Lucas de Carvalho, Victor Derrihu",
+      "createdAt": "2025-09-02T20:09:11.948Z"
     }
   ]
 }
