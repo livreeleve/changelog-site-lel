@@ -158,6 +158,14 @@
       "description": "Corrigido um bug que afetava a funcionalidade Compre Junto.",
       "author": "",
       "createdAt": "2025-09-02T18:53:29.692Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "Fix, feature",
+      "title": "Criar alguma coisa",
+      "description": "Finalizamos a implementação de uma nova funcionalidade que aprimora a experiência geral do usuário.",
+      "author": "",
+      "createdAt": "2025-09-02T18:54:20.033Z"
     }
   ]
 }
