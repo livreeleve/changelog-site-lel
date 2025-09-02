@@ -126,6 +126,14 @@
       "description": "Lançamento oficial do novo website da empresa, com design moderno e melhorias significativas na usabilidade.",
       "author": "",
       "createdAt": "2025-09-02T17:50:29.000Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "Fix, feature",
+      "title": "Alterar frete grátis pra camapanha fim do mês",
+      "description": "As regras de frete grátis foram atualizadas e configuradas para a campanha promocional de fim de mês.",
+      "author": "",
+      "createdAt": "2025-09-02T17:54:42.498Z"
     }
   ]
 }
