@@ -118,6 +118,14 @@
       "description": "Um histórico na busca do site, onde aparecem os 4 últimos termos buscados",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-08-26T12:25:13.116Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "Fix, feature",
+      "title": "N8N atualizado o changelog",
+      "description": "Atualização do N8N para a versão mais recente. Esta melhoria traz otimizações de performance e novas funcionalidades para nossos fluxos de trabalho de automação.",
+      "author": "",
+      "createdAt": "2025-09-02T18:14:31.338Z"
     }
   ]
 }
