@@ -134,6 +134,14 @@
       "description": "Resolvido um problema na funcionalidade \"Compre Junto\". Agora, a compra de produtos em conjunto funciona corretamente, melhorando a experiência do usuário.",
       "author": "",
       "createdAt": "2025-09-02T18:48:02.548Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "Fix, feature",
+      "title": "Consertar bug no compre junto",
+      "description": "Corrigido um bug na funcionalidade de Compre Junto.",
+      "author": "",
+      "createdAt": "2025-09-02T18:48:15.380Z"
     }
   ]
 }
