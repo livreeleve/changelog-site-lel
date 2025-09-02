@@ -126,6 +126,14 @@
       "description": "Atualização do N8N para a versão mais recente. Esta melhoria traz otimizações de performance e novas funcionalidades para nossos fluxos de trabalho de automação.",
       "author": "",
       "createdAt": "2025-09-02T18:14:31.338Z"
+    },
+    {
+      "date": "2025-09-02",
+      "type": "Fix, feature",
+      "title": "N8N atualizado o changelog",
+      "description": "O changelog do N8N foi atualizado com os registros mais recentes.\nAgora, todas as últimas novidades e melhorias estão documentadas.\nConsulte-o para acompanhar as atualizações da plataforma.",
+      "author": "",
+      "createdAt": "2025-09-02T18:14:51.192Z"
     }
   ]
 }
