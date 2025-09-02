@@ -1,6 +1,13 @@
 {
   "project": "Livre e Leve — Site",
   "entries": [
-    
+    {
+      "date": "2025-09-02",
+      "type": "feature",
+      "title": "N8N atualizado o changelog",
+      "description": "Atualizamos o N8N para a versão mais recente, garantindo melhorias de desempenho e segurança na automação dos fluxos de trabalho.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-02T20:12:29.148Z"
+    }
   ]
 }
