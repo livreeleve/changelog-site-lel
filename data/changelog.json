@@ -72,6 +72,14 @@
       "description": "Renovação do certificado SSL para o domínio livreeleve.net, garantindo a segurança e confiabilidade da conexão.",
       "author": "Lucas de Carvalho, Victor Derrihu, Wanderson da Costa Correa",
       "createdAt": "2025-09-03T10:38:40.508Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Configurar Acesso Externo ao Servidor Interno",
+      "description": "Foi configurado o acesso externo ao servidor interno, aprimorando a conectividade para serviços e integrações.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:38:43.856Z"
     }
   ]
 }
