@@ -88,6 +88,14 @@
       "description": "A busca por \"Meus Pedidos\" agora te levará diretamente à página dedicada, otimizando seu acesso. Isso garante que você encontre e gerencie suas compras de forma mais rápida e intuitiva, melhorando sua experiência.",
       "author": "Lucas de Carvalho",
       "createdAt": "2025-09-03T10:41:11.854Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Otimização Visual da Página de Produtos",
+      "description": "Melhoramos a experiência visual da página de produtos. Atualizamos o design para uma apresentação mais clara e atraente dos itens, tornando sua navegação e compra mais intuitivas e agradáveis.",
+      "author": "Gustavo Fagundes, Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:41:19.149Z"
     }
   ]
 }
