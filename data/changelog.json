@@ -176,6 +176,14 @@
       "description": "Realizamos um aprimoramento visual nas descrições de categoria, tornando-as mais claras. Os botões de paginação foram atualizados para um design mais moderno, melhorando sua experiência de navegação e leitura.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-03T10:46:30.129Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "feature",
+      "title": "Criar Aplicativo de Changelog do Site",
+      "description": "Novo aplicativo de Changelog do Site desenvolvido e disponível. Ele centraliza e otimiza a gestão das atualizações, melhorando a comunicação e acompanhamento das novidades.",
+      "author": "Gustavo Fagundes, Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:46:34.421Z"
     }
   ]
 }
