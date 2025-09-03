@@ -128,6 +128,14 @@
       "description": "O botão de Perguntas do Produto foi reintegrado, restaurando a funcionalidade para enviar suas dúvidas sobre os itens.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-03T10:42:58.509Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Migrar Carrosséis: Swiper -> Emblar",
+      "description": "Realizamos a migração dos carrosséis existentes da biblioteca Swiper para Emblar, visando melhorias de desempenho e manutenibilidade dos componentes.",
+      "author": "Gustavo Fagundes, Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:44:08.969Z"
     }
   ]
 }
