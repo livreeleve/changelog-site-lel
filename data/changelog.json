@@ -96,6 +96,14 @@
       "description": "Melhoramos a experiência visual da página de produtos. Atualizamos o design para uma apresentação mais clara e atraente dos itens, tornando sua navegação e compra mais intuitivas e agradáveis.",
       "author": "Gustavo Fagundes, Lucas de Carvalho",
       "createdAt": "2025-09-03T10:41:19.149Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "feature",
+      "title": "Automatizar Ativação de Produtos quando voltarem para o estoque (app avise-me)",
+      "description": "Implementamos a ativação automática de produtos.\nAgora, itens que retornam ao estoque são reativados sem intervenção manual,\notimizando o processo para o aplicativo \"Avise-me\".",
+      "author": "Gustavo Fagundes, Lucas de Carvalho, Victor Derrihu",
+      "createdAt": "2025-09-03T10:41:52.799Z"
     }
   ]
 }
