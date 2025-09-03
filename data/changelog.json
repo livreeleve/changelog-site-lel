@@ -40,6 +40,14 @@
       "description": "Otimizamos o sistema de acompanhamento de entregas, oferecendo maior precisão e visibilidade sobre o status dos seus pedidos.",
       "author": "Lucas de Carvalho, Victor Derrihu",
       "createdAt": "2025-09-03T10:37:31.436Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Migração PagBrasil p/ Mercado Pago (Shopify - CC/Pix)",
+      "description": "Concluímos a migração dos pagamentos de cartão de crédito e Pix na Shopify, passando da PagBrasil para o Mercado Pago, visando uma experiência de checkout aprimorada.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:37:39.365Z"
     }
   ]
 }
