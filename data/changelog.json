@@ -56,6 +56,14 @@
       "description": "Unificamos as opções de suporte direto no sistema. Agora, o botão Ajuda e o acesso ao WhatsApp estão integrados, simplificando sua busca por assistência.",
       "author": "Lucas de Carvalho",
       "createdAt": "2025-09-03T10:37:46.017Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "fix",
+      "title": "Falha: Mover Produtos para Baixo em Categorias",
+      "description": "Corrigida a falha que impedia mover produtos para baixo na ordem das categorias.",
+      "author": "Wanderson da Costa Correa",
+      "createdAt": "2025-09-03T10:38:34.418Z"
     }
   ]
 }
