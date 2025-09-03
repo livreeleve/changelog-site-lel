@@ -184,6 +184,14 @@
       "description": "Novo aplicativo de Changelog do Site desenvolvido e disponível. Ele centraliza e otimiza a gestão das atualizações, melhorando a comunicação e acompanhamento das novidades.",
       "author": "Gustavo Fagundes, Lucas de Carvalho",
       "createdAt": "2025-09-03T10:46:34.421Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Alinhar Design: Filtro de Tipos em Categorias",
+      "description": "Alinhamos o design do filtro de tipos\nnas categorias para uma experiência\nmais consistente e intuitiva.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-03T10:46:39.582Z"
     }
   ]
 }
