@@ -8,6 +8,14 @@
       "description": "Refatoramos o EasyShipping para aprimorar sua performance e estabilidade.",
       "author": "Victor Derrihu",
       "createdAt": "2025-09-03T10:36:01.773Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Otimizar Miniaturas: Performance App Coleções",
+      "description": "Otimizamos a exibição de miniaturas para melhorar a performance e a experiência de navegação nas Coleções do aplicativo.",
+      "author": "Wanderson da Costa Correa",
+      "createdAt": "2025-09-03T10:36:08.015Z"
     }
   ]
 }
