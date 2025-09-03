@@ -1,21 +1,6 @@
 {
   "project": "Livre e Leve — Site",
   "entries": [
-    {
-      "date": "2025-09-02",
-      "type": "other",
-      "title": "Consertar bug no compre junto",
-      "description": "Bug corrigido no recurso \"Compre Junto\". A funcionalidade agora opera conforme o esperado.",
-      "author": "Gustavo Fagundes",
-      "createdAt": "2025-09-02T20:21:04.678Z"
-    },
-    {
-      "date": "2025-09-02",
-      "type": "other",
-      "title": "Consertar bug no compre junto",
-      "description": "Corrigimos um erro na funcionalidade **Compre Junto**, garantindo seu pleno funcionamento e melhor experiência de compra.",
-      "author": "Gustavo Fagundes",
-      "createdAt": "2025-09-02T20:21:38.539Z"
-    }
+    
   ]
 }
