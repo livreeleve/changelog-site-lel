@@ -152,6 +152,14 @@
       "description": "Ajustamos a exibição da grade de produtos para 4 itens por linha. A visualização foi otimizada e agora é totalmente responsiva, adaptando-se perfeitamente a qualquer dispositivo.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-03T10:44:14.929Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Renovação de Ícones: Estilo Feminino e Delicado",
+      "description": "Os ícones da plataforma foram atualizados com um novo design. Adotamos um estilo mais feminino e delicado, aprimorando a experiência visual.",
+      "author": "Gustavo Fagundes, Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:44:19.164Z"
     }
   ]
 }
