@@ -168,6 +168,14 @@
       "description": "Implementada a funcionalidade para aplicar e reverter Prescripts Sizebay, otimizando o controle e a gestão das configurações da plataforma.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-03T10:44:22.794Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Aprimoramento Visual das Descrições de Categoria e botões de paginação",
+      "description": "Realizamos um aprimoramento visual nas descrições de categoria, tornando-as mais claras. Os botões de paginação foram atualizados para um design mais moderno, melhorando sua experiência de navegação e leitura.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-03T10:46:30.129Z"
     }
   ]
 }
