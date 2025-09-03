@@ -112,6 +112,14 @@
       "description": "A fonte Gotham foi padronizada e configurada no Shopify Theme Editor, garantindo uma estética unificada em todas as páginas da loja.",
       "author": "Gustavo Fagundes, Lucas de Carvalho",
       "createdAt": "2025-09-03T10:42:04.792Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "fix",
+      "title": "Consertar e-mails livreeleve: Falha entrega Hotmail (TXT CloudFlare)",
+      "description": "Resolvido o problema de entrega de e-mails da livreeleve para Hotmail, corrigindo o registro TXT no CloudFlare que causava as falhas.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:42:10.508Z"
     }
   ]
 }
