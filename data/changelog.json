@@ -160,6 +160,14 @@
       "description": "Os ícones da plataforma foram atualizados com um novo design. Adotamos um estilo mais feminino e delicado, aprimorando a experiência visual.",
       "author": "Gustavo Fagundes, Lucas de Carvalho",
       "createdAt": "2025-09-03T10:44:19.164Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "fix",
+      "title": "Aplicar/Reverter Prescript Sizebay",
+      "description": "Implementada a funcionalidade para aplicar e reverter Prescripts Sizebay, otimizando o controle e a gestão das configurações da plataforma.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-03T10:44:22.794Z"
     }
   ]
 }
