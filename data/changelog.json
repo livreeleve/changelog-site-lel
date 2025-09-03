@@ -80,6 +80,14 @@
       "description": "Foi configurado o acesso externo ao servidor interno, aprimorando a conectividade para serviços e integrações.",
       "author": "Lucas de Carvalho",
       "createdAt": "2025-09-03T10:38:43.856Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "feature",
+      "title": "Redirecionar Busca \"Meus Pedidos\" para página de pedidos",
+      "description": "A busca por \"Meus Pedidos\" agora te levará diretamente à página dedicada, otimizando seu acesso. Isso garante que você encontre e gerencie suas compras de forma mais rápida e intuitiva, melhorando sua experiência.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:41:11.854Z"
     }
   ]
 }
