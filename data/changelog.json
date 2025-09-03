@@ -64,6 +64,14 @@
       "description": "Corrigida a falha que impedia mover produtos para baixo na ordem das categorias.",
       "author": "Wanderson da Costa Correa",
       "createdAt": "2025-09-03T10:38:34.418Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Renovação SSL: livreeleve.net (Locaweb)",
+      "description": "Renovação do certificado SSL para o domínio livreeleve.net, garantindo a segurança e confiabilidade da conexão.",
+      "author": "Lucas de Carvalho, Victor Derrihu, Wanderson da Costa Correa",
+      "createdAt": "2025-09-03T10:38:40.508Z"
     }
   ]
 }
