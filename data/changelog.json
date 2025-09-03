@@ -1,6 +1,13 @@
 {
   "project": "Livre e Leve — Site",
   "entries": [
-    
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Refatoração EasyShipping",
+      "description": "Refatoramos o EasyShipping para aprimorar sua performance e estabilidade.",
+      "author": "Victor Derrihu",
+      "createdAt": "2025-09-03T10:36:01.773Z"
+    }
   ]
 }
