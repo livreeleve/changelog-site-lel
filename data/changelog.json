@@ -32,6 +32,14 @@
       "description": "Concluímos o teste A/B comparando a Sacola Deslizante com a Página Dedicada. Este teste avaliou o desempenho de ambas as interfaces no processo de compra. O objetivo é otimizar a experiência do usuário e a taxa de conversão.",
       "author": "Gustavo Fagundes, Lucas de Carvalho",
       "createdAt": "2025-09-03T10:37:20.240Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Aprimoramento do Acompanhamento de Entregas",
+      "description": "Otimizamos o sistema de acompanhamento de entregas, oferecendo maior precisão e visibilidade sobre o status dos seus pedidos.",
+      "author": "Lucas de Carvalho, Victor Derrihu",
+      "createdAt": "2025-09-03T10:37:31.436Z"
     }
   ]
 }
