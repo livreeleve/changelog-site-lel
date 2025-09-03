@@ -48,6 +48,14 @@
       "description": "Concluímos a migração dos pagamentos de cartão de crédito e Pix na Shopify, passando da PagBrasil para o Mercado Pago, visando uma experiência de checkout aprimorada.",
       "author": "Lucas de Carvalho",
       "createdAt": "2025-09-03T10:37:39.365Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Unificação Suporte: Botão Ajuda e WhatsApp",
+      "description": "Unificamos as opções de suporte direto no sistema. Agora, o botão Ajuda e o acesso ao WhatsApp estão integrados, simplificando sua busca por assistência.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:37:46.017Z"
     }
   ]
 }
