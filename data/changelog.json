@@ -16,6 +16,14 @@
       "description": "Otimizamos a exibição de miniaturas para melhorar a performance e a experiência de navegação nas Coleções do aplicativo.",
       "author": "Wanderson da Costa Correa",
       "createdAt": "2025-09-03T10:36:08.015Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Migração AWS: Otimização de Performance",
+      "description": "Finalizamos a otimização de performance na infraestrutura AWS, proporcionando maior agilidade e eficiência aos nossos serviços.",
+      "author": "Lucas de Carvalho, Victor Derrihu, Wanderson da Costa Correa",
+      "createdAt": "2025-09-03T10:36:54.088Z"
     }
   ]
 }
