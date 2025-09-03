@@ -104,6 +104,14 @@
       "description": "Implementamos a ativação automática de produtos.\nAgora, itens que retornam ao estoque são reativados sem intervenção manual,\notimizando o processo para o aplicativo \"Avise-me\".",
       "author": "Gustavo Fagundes, Lucas de Carvalho, Victor Derrihu",
       "createdAt": "2025-09-03T10:41:52.799Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "chore",
+      "title": "Padronização da Fonte: Gotham e Edição dela no Shopify Theme Editor",
+      "description": "A fonte Gotham foi padronizada e configurada no Shopify Theme Editor, garantindo uma estética unificada em todas as páginas da loja.",
+      "author": "Gustavo Fagundes, Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:42:04.792Z"
     }
   ]
 }
