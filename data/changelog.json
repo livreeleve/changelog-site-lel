@@ -136,6 +136,14 @@
       "description": "Realizamos a migração dos carrosséis existentes da biblioteca Swiper para Emblar, visando melhorias de desempenho e manutenibilidade dos componentes.",
       "author": "Gustavo Fagundes, Lucas de Carvalho",
       "createdAt": "2025-09-03T10:44:08.969Z"
+    },
+    {
+      "date": "2025-09-03",
+      "type": "fix",
+      "title": "Corrigir espaçamento entre `<p>` na descrição do produto",
+      "description": "O espaçamento entre os parágrafos da descrição do produto foi corrigido para melhor legibilidade.",
+      "author": "Gustavo Fagundes, Lucas de Carvalho",
+      "createdAt": "2025-09-03T10:44:12.031Z"
     }
   ]
 }
