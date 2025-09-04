@@ -208,6 +208,14 @@
       "description": "Agora é possível visualizar o preço exclusivo para pagamentos via Pix, que inclui um desconto de 10% aplicado automaticamente.",
       "author": "Gustavo Fagundes, Lucas de Carvalho",
       "createdAt": "2025-09-04T17:02:34.887Z"
+    },
+    {
+      "date": "2025-09-04",
+      "type": "chore",
+      "title": "Melhoria de Parcelamento: R$10 Mínimo e Expansão Sem Juros",
+      "description": "Otimizamos as opções de parcelamento, agora com valor mínimo de R$10 por parcela e mais possibilidades de pagamento sem juros.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-04T18:58:51.958Z"
     }
   ]
 }
