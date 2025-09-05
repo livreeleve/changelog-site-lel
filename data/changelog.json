@@ -256,6 +256,14 @@
       "description": "Melhoramos o recurso \"Avise-me\" para que as notificações sejam enviadas apenas quando o produto possuir 5 ou mais unidades em estoque.",
       "author": "Gustavo Fagundes, Victor Derrihu",
       "createdAt": "2025-09-05T13:06:04.241Z"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "chore",
+      "title": "Menu Principal: Fixação Inteligente e Configuração",
+      "description": "O Menu Principal foi atualizado para incluir a Fixação Inteligente, otimizando a organização dos itens. As opções de configuração agora estão mais acessíveis, simplificando a personalização da sua experiência.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-05T13:06:20.179Z"
     }
   ]
 }
