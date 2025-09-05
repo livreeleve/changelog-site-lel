@@ -216,6 +216,14 @@
       "description": "Otimizamos as opções de parcelamento, agora com valor mínimo de R$10 por parcela e mais possibilidades de pagamento sem juros.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-04T18:58:51.958Z"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "feature",
+      "title": "Implementar Selo Votação Prêmio Reclame AQUI no Site",
+      "description": "Implementamos o selo de votação do Prêmio Reclame AQUI em nosso site, facilitando o acesso e a participação na campanha.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-05T12:44:08.783Z"
     }
   ]
 }
