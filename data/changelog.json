@@ -248,6 +248,14 @@
       "description": "Implementamos um novo botão \"Voltar ao Topo\" dinâmico, que surge ao rolar a página. Ele permite que usuários retornem rapidamente ao início, melhorando a navegação em conteúdos extensos. Esta funcionalidade visa otimizar a experiência em páginas com rolagem longa.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-05T13:05:48.148Z"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "chore",
+      "title": "Ajuste Avise-me: Notificações com 5+ Unidades em Estoque",
+      "description": "Melhoramos o recurso \"Avise-me\" para que as notificações sejam enviadas apenas quando o produto possuir 5 ou mais unidades em estoque.",
+      "author": "Gustavo Fagundes, Victor Derrihu",
+      "createdAt": "2025-09-05T13:06:04.241Z"
     }
   ]
 }
