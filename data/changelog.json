@@ -240,6 +240,14 @@
       "description": "Compactamos a exibição do seletor de tamanho único, garantindo um layout mais limpo e organizado nas páginas de produto.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-05T13:05:24.946Z"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "chore",
+      "title": "Implementar Botão \"Voltar ao Topo\" Dinâmico",
+      "description": "Implementamos um novo botão \"Voltar ao Topo\" dinâmico, que surge ao rolar a página. Ele permite que usuários retornem rapidamente ao início, melhorando a navegação em conteúdos extensos. Esta funcionalidade visa otimizar a experiência em páginas com rolagem longa.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-05T13:05:48.148Z"
     }
   ]
 }
