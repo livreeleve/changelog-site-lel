@@ -224,6 +224,14 @@
       "description": "Implementamos o selo de votação do Prêmio Reclame AQUI em nosso site, facilitando o acesso e a participação na campanha.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-05T12:44:08.783Z"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "chore",
+      "title": "Remover Lazy Loading: Segundo Banner da Homepage",
+      "description": "Melhoramos o tempo de carregamento do segundo banner na homepage, que agora é exibido mais rapidamente para os usuários.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-05T13:04:58.619Z"
     }
   ]
 }
