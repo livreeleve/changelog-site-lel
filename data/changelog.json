@@ -232,6 +232,14 @@
       "description": "Melhoramos o tempo de carregamento do segundo banner na homepage, que agora é exibido mais rapidamente para os usuários.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-05T13:04:58.619Z"
+    },
+    {
+      "date": "2025-09-05",
+      "type": "chore",
+      "title": "Compactar seletor de tamanho único",
+      "description": "Compactamos a exibição do seletor de tamanho único, garantindo um layout mais limpo e organizado nas páginas de produto.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-05T13:05:24.946Z"
     }
   ]
 }
