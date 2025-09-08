@@ -264,6 +264,14 @@
       "description": "O Menu Principal foi atualizado para incluir a Fixação Inteligente, otimizando a organização dos itens. As opções de configuração agora estão mais acessíveis, simplificando a personalização da sua experiência.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-05T13:06:20.179Z"
+    },
+    {
+      "date": "2025-09-08",
+      "type": "feature",
+      "title": "Exibição Flexível de Imagens de Produto",
+      "description": "Implementamos uma exibição mais flexível das imagens de produtos, garantindo uma visualização otimizada e adaptável em qualquer dispositivo.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-08T19:24:48.859Z"
     }
   ]
 }
