@@ -288,6 +288,14 @@
       "description": "Corrigido o fluxo de processamento de pedidos entre Millenium e Shopify, assegurando a sincronização correta e evitando falhas na integração.",
       "author": "Victor Derrihu",
       "createdAt": "2025-09-12T11:56:10.264Z"
+    },
+    {
+      "date": "2025-09-12",
+      "type": "chore",
+      "title": "Implementar Exibição Desconto Pix na Sacola de Gaveta",
+      "description": "Agora o desconto Pix é exibido diretamente na Sacola de Gaveta, facilitando a visualização da sua economia.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-12T13:41:42.996Z"
     }
   ]
 }
