@@ -280,6 +280,14 @@
       "description": "Corrigida a aplicação do desconto Pix, que gerava um valor excessivo em compras realizadas com vale-compras ou crédito, assegurando agora a precificação correta.",
       "author": "Gustavo Fagundes, Josimar, Lucas de Carvalho",
       "createdAt": "2025-09-11T11:55:09.170Z"
+    },
+    {
+      "date": "2025-09-12",
+      "type": "other",
+      "title": "Correção no processamentos de pedidos Millenium / Shopify",
+      "description": "Corrigido o fluxo de processamento de pedidos entre Millenium e Shopify, assegurando a sincronização correta e evitando falhas na integração.",
+      "author": "Victor Derrihu",
+      "createdAt": "2025-09-12T11:56:10.264Z"
     }
   ]
 }
