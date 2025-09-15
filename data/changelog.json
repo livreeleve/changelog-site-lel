@@ -296,6 +296,14 @@
       "description": "Agora o desconto Pix é exibido diretamente na Sacola de Gaveta, facilitando a visualização da sua economia.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-12T13:41:42.996Z"
+    },
+    {
+      "date": "2025-09-15",
+      "type": "chore",
+      "title": "Ajustar Design: Filtro de Categorias (Menu)",
+      "description": "Ajustamos o design do filtro de categorias no menu, tornando-o mais intuitivo e agradável.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-15T12:46:29.269Z"
     }
   ]
 }
