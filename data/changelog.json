@@ -312,6 +312,14 @@
       "description": "Implementadas setas de navegação na galeria de produtos, proporcionando uma experiência de visualização mais fluida e intuitiva para os usuários.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-15T12:50:19.873Z"
+    },
+    {
+      "date": "2025-09-15",
+      "type": "chore",
+      "title": "Reimplementar Paginação: Layout e Comportamento",
+      "description": "A paginação de dados foi reimplementada, apresentando um novo layout e comportamento.\nIsso proporciona uma navegação mais moderna e eficiente entre as listas de informações.\nDesfrute de uma experiência de usuário aprimorada e mais consistente.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-15T20:18:47.357Z"
     }
   ]
 }
