@@ -304,6 +304,14 @@
       "description": "Ajustamos o design do filtro de categorias no menu, tornando-o mais intuitivo e agradável.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-15T12:46:29.269Z"
+    },
+    {
+      "date": "2025-09-15",
+      "type": "feature",
+      "title": "Implementar Setas de Navegação na Galeria de Produtos",
+      "description": "Implementadas setas de navegação na galeria de produtos, proporcionando uma experiência de visualização mais fluida e intuitiva para os usuários.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-15T12:50:19.873Z"
     }
   ]
 }
