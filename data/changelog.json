@@ -320,6 +320,14 @@
       "description": "A paginação de dados foi reimplementada, apresentando um novo layout e comportamento.\nIsso proporciona uma navegação mais moderna e eficiente entre as listas de informações.\nDesfrute de uma experiência de usuário aprimorada e mais consistente.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-15T20:18:47.357Z"
+    },
+    {
+      "date": "2025-09-16",
+      "type": "feature",
+      "title": "Recuperação Pix via WhatsApp",
+      "description": "Agora você pode solicitar a recuperação de transações Pix de forma rápida e conveniente diretamente pelo WhatsApp, facilitando seu atendimento.",
+      "author": "Lucas de Carvalho, Victor Derrihu",
+      "createdAt": "2025-09-16T18:05:26.573Z"
     }
   ]
 }
