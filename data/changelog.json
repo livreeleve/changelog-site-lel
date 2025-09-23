@@ -336,6 +336,14 @@
       "description": "Implementamos a validação e correção automática de CEP e Estado no checkout, garantindo maior precisão nos dados de envio e uma experiência de compra mais fluida para os clientes.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-23T11:53:01.627Z"
+    },
+    {
+      "date": "2025-09-23",
+      "type": "feature",
+      "title": "Implementar Aviso \"Últimas Unidades\" - Página de Produto",
+      "description": "Implementamos um aviso de \"Últimas Unidades\" nas páginas de produto. Agora, os clientes verão quando um item está com estoque baixo, incentivando a decisão de compra.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-23T11:58:00.940Z"
     }
   ]
 }
