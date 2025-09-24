@@ -360,6 +360,14 @@
       "description": "Agora, as páginas de produto contam com blocos dedicados para apresentar os benefícios de cada item, otimizando a visualização e a compreensão para o cliente.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-24T13:25:54.781Z"
+    },
+    {
+      "date": "2025-09-24",
+      "type": "fix",
+      "title": "Corrigir Z-index: Setas Carrossel sobrepondo Menu Principal",
+      "description": "Corrigimos um problema visual onde as setas do carrossel podiam sobrepor o Menu Principal. Agora o menu é sempre visível, garantindo uma navegação fluida.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-24T13:26:09.337Z"
     }
   ]
 }
