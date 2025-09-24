@@ -352,6 +352,14 @@
       "description": "Adicionamos a opção de login social via Google e Facebook, oferecendo um acesso mais rápido e simplificado à sua conta.",
       "author": "Lucas de Carvalho",
       "createdAt": "2025-09-23T11:58:40.608Z"
+    },
+    {
+      "date": "2025-09-24",
+      "type": "feature",
+      "title": "Implementar Blocos de Benefícios - Páginas de Produto",
+      "description": "Agora, as páginas de produto contam com blocos dedicados para apresentar os benefícios de cada item, otimizando a visualização e a compreensão para o cliente.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-24T13:25:54.781Z"
     }
   ]
 }
