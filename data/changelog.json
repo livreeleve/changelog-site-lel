@@ -368,6 +368,14 @@
       "description": "Corrigimos um problema visual onde as setas do carrossel podiam sobrepor o Menu Principal. Agora o menu é sempre visível, garantindo uma navegação fluida.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-24T13:26:09.337Z"
+    },
+    {
+      "date": "2025-09-30",
+      "type": "chore",
+      "title": "Solicitar Atualização E-Millennium (Linx)",
+      "description": "A atualização do sistema E-Millennium (Linx) foi solicitada para garantir acesso às últimas melhorias e funcionalidades.",
+      "author": "Josimar, Lucas de Carvalho",
+      "createdAt": "2025-09-30T19:07:46.114Z"
     }
   ]
 }
