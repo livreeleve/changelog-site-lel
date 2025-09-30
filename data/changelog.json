@@ -376,6 +376,14 @@
       "description": "A atualização do sistema E-Millennium (Linx) foi solicitada para garantir acesso às últimas melhorias e funcionalidades.",
       "author": "Josimar, Lucas de Carvalho",
       "createdAt": "2025-09-30T19:07:46.114Z"
+    },
+    {
+      "date": "2025-09-30",
+      "type": "fix",
+      "title": "Validar \"Compre Junto\" c/ Tamanhos Esgotados",
+      "description": "Aprimoramos a funcionalidade \"Compre Junto\" para tratar corretamente a disponibilidade de tamanhos esgotados, garantindo que apenas opções válidas sejam exibidas e compradas.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2025-09-30T19:08:12.313Z"
     }
   ]
 }
