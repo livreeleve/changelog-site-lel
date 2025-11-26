@@ -384,6 +384,14 @@
       "description": "Aprimoramos a funcionalidade \"Compre Junto\" para tratar corretamente a disponibilidade de tamanhos esgotados, garantindo que apenas opções válidas sejam exibidas e compradas.",
       "author": "Gustavo Fagundes",
       "createdAt": "2025-09-30T19:08:12.313Z"
+    },
+    {
+      "date": "2025-11-26",
+      "type": "other",
+      "title": "Redesenhar Painel de Dados: Otimizar Dados de Produtos (Josimar)",
+      "description": "Reformulamos o Painel de Dados para uma experiência visual aprimorada.\nOtimizamos a apresentação e organização dos dados de produtos.\nIsso resulta em maior clareza e eficiência na análise das informações.",
+      "author": "Lucas de Carvalho, Victor Derrihu, Wanderson da Costa Correa",
+      "createdAt": "2025-11-26T20:26:37.691Z"
     }
   ]
 }
