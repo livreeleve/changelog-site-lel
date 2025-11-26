@@ -392,6 +392,14 @@
       "description": "Reformulamos o Painel de Dados para uma experiência visual aprimorada.\nOtimizamos a apresentação e organização dos dados de produtos.\nIsso resulta em maior clareza e eficiência na análise das informações.",
       "author": "Lucas de Carvalho, Victor Derrihu, Wanderson da Costa Correa",
       "createdAt": "2025-11-26T20:26:37.691Z"
+    },
+    {
+      "date": "2025-11-26",
+      "type": "other",
+      "title": "Desenvolver Topbar Expansível/Colapsável",
+      "description": "A nova Topbar foi implementada e agora é expansível/colapsável. Essa funcionalidade otimiza o espaço da tela, oferecendo uma interface mais limpa. Melhore sua experiência de navegação com maior flexibilidade.",
+      "author": "",
+      "createdAt": "2025-11-26T20:26:56.929Z"
     }
   ]
 }
