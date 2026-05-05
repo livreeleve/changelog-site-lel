@@ -432,6 +432,14 @@
       "description": "Ajuste realizado no frete grátis para a campanha de fim de mês.",
       "author": "",
       "createdAt": "2026-05-05T12:52:47.099Z"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "other",
+      "title": "Implementação: Separação por Onda e Colmeias (E-Millennium)",
+      "description": "Implementamos a nova funcionalidade de separação por Onda e Colmeias no E-Millennium.\nEsta otimização visa agilizar o processo de picking e organização de pedidos,\nMelhorando a eficiência e precisão nas operações logísticas.",
+      "author": "Josimar, Lucas de Carvalho",
+      "createdAt": "2026-05-05T12:52:46.217Z"
     }
   ]
 }
