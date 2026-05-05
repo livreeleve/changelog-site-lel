@@ -428,18 +428,18 @@
     {
       "date": "2026-05-05",
       "type": "other",
-      "title": "Alterar frete grátis pra camapanha fim do mês",
-      "description": "Ajuste realizado no frete grátis para a campanha de fim de mês.",
-      "author": "",
-      "createdAt": "2026-05-05T12:52:47.099Z"
+      "title": "Resolver `trans_id` Preço: Bugs Recorrentes c/ Rafael (Milennium)",
+      "description": "Corrigidos bugs recorrentes que afetavam o cálculo de preços, relacionados ao `trans_id`.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2026-05-05T12:52:44.919Z"
     },
     {
       "date": "2026-05-05",
       "type": "other",
-      "title": "Botão 'Adicionar à Sacola' Fixo com Ação Condicional",
-      "description": "O botão 'Adicionar à Sacola' foi aprimorado para permanecer fixo na tela, com sua ação ajustada condicionalmente para uma compra mais intuitiva.",
+      "title": "Refatorar Footer: Padronização e Melhoria Visual",
+      "description": "Refatoramos o rodapé para padronização e aprimoramento visual em toda a plataforma.",
       "author": "",
-      "createdAt": "2026-05-05T12:52:49.394Z"
+      "createdAt": "2026-05-05T12:52:48.374Z"
     }
   ]
 }
