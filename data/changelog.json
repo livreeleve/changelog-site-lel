@@ -436,10 +436,10 @@
     {
       "date": "2026-05-05",
       "type": "other",
-      "title": "Implementação: Separação por Onda e Colmeias (E-Millennium)",
-      "description": "Implementamos a nova funcionalidade de separação por Onda e Colmeias no E-Millennium.\nEsta otimização visa agilizar o processo de picking e organização de pedidos,\nMelhorando a eficiência e precisão nas operações logísticas.",
-      "author": "Josimar, Lucas de Carvalho",
-      "createdAt": "2026-05-05T12:52:46.217Z"
+      "title": "Botão 'Adicionar à Sacola' Fixo com Ação Condicional",
+      "description": "O botão 'Adicionar à Sacola' foi aprimorado para permanecer fixo na tela, com sua ação ajustada condicionalmente para uma compra mais intuitiva.",
+      "author": "",
+      "createdAt": "2026-05-05T12:52:49.394Z"
     }
   ]
 }
