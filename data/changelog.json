@@ -428,10 +428,10 @@
     {
       "date": "2026-05-05",
       "type": "other",
-      "title": "Resolver `trans_id` Preço: Bugs Recorrentes c/ Rafael (Milennium)",
-      "description": "Corrigidos bugs recorrentes que afetavam o cálculo de preços, relacionados ao `trans_id`.",
-      "author": "Lucas de Carvalho",
-      "createdAt": "2026-05-05T12:52:44.919Z"
+      "title": "Alterar frete grátis pra camapanha fim do mês",
+      "description": "Ajuste realizado no frete grátis para a campanha de fim de mês.",
+      "author": "",
+      "createdAt": "2026-05-05T12:52:47.099Z"
     }
   ]
 }
