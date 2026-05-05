@@ -424,6 +424,14 @@
       "description": "Lançamos o novo recurso 'Compre Junto', oferecendo sugestões dinâmicas de produtos complementares para sua compra.",
       "author": "",
       "createdAt": "2025-12-17T19:40:26.072Z"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "other",
+      "title": "Resolver `trans_id` Preço: Bugs Recorrentes c/ Rafael (Milennium)",
+      "description": "Corrigidos bugs recorrentes que afetavam o cálculo de preços, relacionados ao `trans_id`.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2026-05-05T12:52:44.919Z"
     }
   ]
 }
