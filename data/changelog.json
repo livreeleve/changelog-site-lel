@@ -464,6 +464,14 @@
       "description": "Realizado ajuste no FasyShipping que permite a aplicação de cupons em pedidos com frete abaixo de R$249.",
       "author": "Gustavo Fagundes, Victor Derrihu",
       "createdAt": "2026-05-06T14:45:04.736Z"
+    },
+    {
+      "date": "2026-05-06",
+      "type": "other",
+      "title": "Corrigir z-index do header em todo o site",
+      "description": "Corrigido o z-index do cabeçalho em todas as páginas para garantir sua correta exibição e evitar sobreposições indesejadas.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-05-06T20:13:36.541Z"
     }
   ]
 }
