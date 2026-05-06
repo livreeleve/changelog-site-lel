@@ -448,6 +448,14 @@
       "description": "Implementado ajuste no FasyShipping para garantir a correta aplicação de cupons em pedidos com frete abaixo de R$ 249.",
       "author": "Gustavo Fagundes, Victor Derrihu",
       "createdAt": "2026-05-06T14:44:52.251Z"
+    },
+    {
+      "date": "2026-05-06",
+      "type": "other",
+      "title": "Ajuste no FasyShipping: Frete abaixo de 249 com cupom",
+      "description": "Ajustado o FasyShipping para o cálculo do frete. Agora, cupons são aplicados corretamente em pedidos com valor abaixo de R$249.",
+      "author": "Gustavo Fagundes, Victor Derrihu",
+      "createdAt": "2026-05-06T14:45:00.550Z"
     }
   ]
 }
