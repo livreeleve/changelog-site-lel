@@ -440,6 +440,14 @@
       "description": "Refatoramos o rodapé para padronização e aprimoramento visual em toda a plataforma.",
       "author": "",
       "createdAt": "2026-05-05T12:52:48.374Z"
+    },
+    {
+      "date": "2026-05-06",
+      "type": "other",
+      "title": "Ajuste no FasyShipping: Frete abaixo de 249 com cupom",
+      "description": "Implementado ajuste no FasyShipping para garantir a correta aplicação de cupons em pedidos com frete abaixo de R$ 249.",
+      "author": "Gustavo Fagundes, Victor Derrihu",
+      "createdAt": "2026-05-06T14:44:52.251Z"
     }
   ]
 }
