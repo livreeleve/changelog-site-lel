@@ -496,6 +496,14 @@
       "description": "O Zendesk agora é atualizado automaticamente após edições em pedidos no OrderFix, garantindo que as informações estejam sempre sincronizadas e precisas para o atendimento.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-05-12T19:32:16.756Z"
+    },
+    {
+      "date": "2026-05-12",
+      "type": "other",
+      "title": "Comentar no histórico do pedido com app OrderFix",
+      "description": "Agora é possível adicionar comentários diretamente no histórico dos pedidos. Essa funcionalidade foi integrada com o app OrderFix para agilizar o acompanhamento e a comunicação interna.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-05-12T19:32:23.662Z"
     }
   ]
 }
