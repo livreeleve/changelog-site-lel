@@ -472,6 +472,14 @@
       "description": "Corrigido o z-index do cabeçalho em todas as páginas para garantir sua correta exibição e evitar sobreposições indesejadas.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-05-06T20:13:36.541Z"
+    },
+    {
+      "date": "2026-05-12",
+      "type": "other",
+      "title": "Atualizar Zendesk após edição no OrderFix",
+      "description": "Zendesk agora é atualizado automaticamente após edições de pedidos no OrderFix, mantendo a consistência dos dados.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-05-12T11:24:33.331Z"
     }
   ]
 }
