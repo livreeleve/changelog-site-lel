@@ -504,6 +504,14 @@
       "description": "Agora é possível adicionar comentários diretamente no histórico dos pedidos. Essa funcionalidade foi integrada com o app OrderFix para agilizar o acompanhamento e a comunicação interna.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-05-12T19:32:23.662Z"
+    },
+    {
+      "date": "2026-05-14",
+      "type": "other",
+      "title": "Implementação de Sistema de Notas Fiscais e Gestão de XML/Inutilização",
+      "description": "Implementamos o novo sistema de notas fiscais, que agora permite a gestão completa de XMLs e a funcionalidade de inutilização, otimizando o processo fiscal da empresa.",
+      "author": "Wanderson da Costa Correa",
+      "createdAt": "2026-05-14T18:30:19.531Z"
     }
   ]
 }
