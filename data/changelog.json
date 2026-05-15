@@ -512,6 +512,14 @@
       "description": "Implementamos o novo sistema de notas fiscais, que agora permite a gestão completa de XMLs e a funcionalidade de inutilização, otimizando o processo fiscal da empresa.",
       "author": "Wanderson da Costa Correa",
       "createdAt": "2026-05-14T18:30:19.531Z"
+    },
+    {
+      "date": "2026-05-15",
+      "type": "other",
+      "title": "integração do zendesk com shopify",
+      "description": "Integração Zendesk-Shopify concluída. Nossos agentes de suporte agora acessam dados de pedidos e clientes diretamente, agilizando o atendimento e aprimorando a experiência do cliente.",
+      "author": "",
+      "createdAt": "2026-05-15T13:59:01.985Z"
     }
   ]
 }
