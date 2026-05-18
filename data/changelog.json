@@ -520,6 +520,14 @@
       "description": "Integração Zendesk-Shopify concluída. Nossos agentes de suporte agora acessam dados de pedidos e clientes diretamente, agilizando o atendimento e aprimorando a experiência do cliente.",
       "author": "",
       "createdAt": "2026-05-15T13:59:01.985Z"
+    },
+    {
+      "date": "2026-05-18",
+      "type": "other",
+      "title": "Ajustar rota FasyShipping - desativar frete inteligente OrderFix",
+      "description": "Ajustada a rota FasyShipping e desativado o frete inteligente do OrderFix.",
+      "author": "Gustavo Fagundes, Victor Derrihu",
+      "createdAt": "2026-05-18T10:07:19.137Z"
     }
   ]
 }
