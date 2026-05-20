@@ -528,6 +528,14 @@
       "description": "Ajustada a rota FasyShipping e desativado o frete inteligente do OrderFix.",
       "author": "Gustavo Fagundes, Victor Derrihu",
       "createdAt": "2026-05-18T10:07:19.137Z"
+    },
+    {
+      "date": "2026-05-20",
+      "type": "other",
+      "title": "Adicionar código Pix no site e popup",
+      "description": "Implementamos o pagamento via Pix, agora disponível no site e em popups, para agilizar suas transações.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-05-20T19:54:10.519Z"
     }
   ]
 }
