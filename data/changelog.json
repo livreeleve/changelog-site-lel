@@ -544,6 +544,14 @@
       "description": "Realizamos diversas correções e aprimoramentos para otimizar a integração com o sistema Millenium, garantindo maior estabilidade e precisão nos dados.",
       "author": "Victor Derrihu",
       "createdAt": "2026-05-21T11:17:47.396Z"
+    },
+    {
+      "date": "2026-05-21",
+      "type": "other",
+      "title": "Sistema temporário para integração de Bipagem com LivreCore",
+      "description": "Implementada uma solução temporária para integrar a bipagem de itens.\nEsta funcionalidade permite a comunicação eficiente com o LivreCore,\nGarantindo o registro e controle provisório de informações.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-05-21T13:31:21.524Z"
     }
   ]
 }
