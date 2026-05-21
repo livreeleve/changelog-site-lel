@@ -552,6 +552,14 @@
       "description": "Implementada uma solução temporária para integrar a bipagem de itens.\nEsta funcionalidade permite a comunicação eficiente com o LivreCore,\nGarantindo o registro e controle provisório de informações.",
       "author": "Victor Derrihu",
       "createdAt": "2026-05-21T13:31:21.524Z"
+    },
+    {
+      "date": "2026-05-21",
+      "type": "other",
+      "title": "Adicionar funcionalidade ao aplicativo \"Sorte Collection\".",
+      "description": "Novas funcionalidades foram implementadas no aplicativo Sorte Collection, enriquecendo a experiência do usuário com mais recursos e melhorias.",
+      "author": "Wanderson da Costa Correa",
+      "createdAt": "2026-05-21T18:29:37.187Z"
     }
   ]
 }
