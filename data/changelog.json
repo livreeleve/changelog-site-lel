@@ -536,6 +536,14 @@
       "description": "Implementamos o pagamento via Pix, agora disponível no site e em popups, para agilizar suas transações.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-05-20T19:54:10.519Z"
+    },
+    {
+      "date": "2026-05-21",
+      "type": "other",
+      "title": "Correções na Integração Millenium",
+      "description": "Realizamos diversas correções e aprimoramentos para otimizar a integração com o sistema Millenium, garantindo maior estabilidade e precisão nos dados.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-05-21T11:17:47.396Z"
     }
   ]
 }
