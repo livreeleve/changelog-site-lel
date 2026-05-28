@@ -568,6 +568,14 @@
       "description": "O Painel LivreCore foi atualizado com novas funcionalidades e correções, proporcionando uma experiência aprimorada aos usuários.",
       "author": "Victor Derrihu",
       "createdAt": "2026-05-22T14:58:00.576Z"
+    },
+    {
+      "date": "2026-05-28",
+      "type": "other",
+      "title": "Sistema temporário para integração de Bipagem com LivreCore",
+      "description": "Implementado um sistema temporário para viabilizar a integração da funcionalidade de Bipagem com o LivreCore.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-05-28T17:09:55.909Z"
     }
   ]
 }
