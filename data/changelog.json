@@ -576,6 +576,14 @@
       "description": "Implementado um sistema temporário para viabilizar a integração da funcionalidade de Bipagem com o LivreCore.",
       "author": "Victor Derrihu",
       "createdAt": "2026-05-28T17:09:55.909Z"
+    },
+    {
+      "date": "2026-06-02",
+      "type": "other",
+      "title": "Implementações e Ajustes no Social bot",
+      "description": "Implementamos novas funcionalidades e ajustamos o Social bot. Estas atualizações visam aprimorar sua eficiência e estabilidade geral, melhorando a experiência do usuário.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-02T12:25:22.368Z"
     }
   ]
 }
