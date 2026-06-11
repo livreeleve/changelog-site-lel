@@ -592,6 +592,14 @@
       "description": "Automatizamos o reenvio de pedidos, otimizando o fluxo e reduzindo o esforço manual. Isso garante mais agilidade e eficiência na gestão.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-11T13:39:29.791Z"
+    },
+    {
+      "date": "2026-06-11",
+      "type": "other",
+      "title": "Criar status de falha ou devolvido no Shopify",
+      "description": "Implementamos novos status de 'falha' e 'devolvido' para pedidos no Shopify. Isso otimiza o gerenciamento e o acompanhamento das suas transações.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-11T18:23:21.111Z"
     }
   ]
 }
