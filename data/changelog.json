@@ -616,6 +616,14 @@
       "description": "Corrigido o fluxo de edição de e-mail de pedidos, agora permitindo ajustes rápidos e eficientes diretamente pelo aplicativo.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-12T11:37:53.453Z"
+    },
+    {
+      "date": "2026-06-12",
+      "type": "other",
+      "title": "Validar estoque no Millennium ao editar/cancelar pedido",
+      "description": "Implementamos a validação de estoque no Millennium ao editar ou cancelar pedidos, garantindo maior precisão e controle.",
+      "author": "Wanderson da Costa Correa",
+      "createdAt": "2026-06-12T14:14:48.907Z"
     }
   ]
 }
