@@ -600,6 +600,14 @@
       "description": "Implementamos novos status de 'falha' e 'devolvido' para pedidos no Shopify. Isso otimiza o gerenciamento e o acompanhamento das suas transações.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-11T18:23:21.111Z"
+    },
+    {
+      "date": "2026-06-12",
+      "type": "other",
+      "title": "Correção - Ordenar no móbile",
+      "description": "Corrigido o problema de ordenação de itens na visualização móvel.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-12T11:24:48.350Z"
     }
   ]
 }
