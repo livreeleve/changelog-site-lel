@@ -608,6 +608,14 @@
       "description": "Corrigido o problema de ordenação de itens na visualização móvel.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-12T11:24:48.350Z"
+    },
+    {
+      "date": "2026-06-12",
+      "type": "other",
+      "title": "Editar e-mail do pedido - App Order Fix",
+      "description": "Corrigido o fluxo de edição de e-mail de pedidos, agora permitindo ajustes rápidos e eficientes diretamente pelo aplicativo.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-12T11:37:53.453Z"
     }
   ]
 }
