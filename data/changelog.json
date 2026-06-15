@@ -648,6 +648,14 @@
       "description": "Realizamos uma correção no sistema troquecommerce, otimizando o processamento de pedidos e garantindo maior precisão e confiabilidade.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-15T11:36:04.186Z"
+    },
+    {
+      "date": "2026-06-15",
+      "type": "other",
+      "title": "Destacar produto indisponível em coleções",
+      "description": "Implementamos um destaque visual para produtos indisponíveis nas páginas de coleções.\nEssa melhoria permite que usuários identifiquem rapidamente itens fora de estoque.\nOtimizando a navegação e a experiência de compra no site.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-15T12:35:14.670Z"
     }
   ]
 }
