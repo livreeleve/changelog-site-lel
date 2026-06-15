@@ -664,6 +664,14 @@
       "description": "Implementamos a funcionalidade de rastreamento de pedidos no OrderFix. Agora você pode acompanhar o status e o trajeto de suas encomendas diretamente na plataforma, para maior controle e transparência.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-15T17:56:48.373Z"
+    },
+    {
+      "date": "2026-06-15",
+      "type": "other",
+      "title": "Personalizar coleção de produtos ( Alan )",
+      "description": "Agora você pode personalizar suas coleções de produtos com mais facilidade, melhorando a organização e a apresentação na sua loja.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-15T18:19:57.803Z"
     }
   ]
 }
