@@ -640,6 +640,14 @@
       "description": "Implementamos melhorias e correções importantes no módulo de pedidos.\nEssas atualizações garantem maior estabilidade e precisão no processamento.\nSua experiência com a gestão de pedidos está agora mais robusta e confiável.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-15T11:36:01.328Z"
+    },
+    {
+      "date": "2026-06-15",
+      "type": "other",
+      "title": "Solicitações - troquecommerce OrderFix",
+      "description": "Realizamos uma correção no sistema troquecommerce, otimizando o processamento de pedidos e garantindo maior precisão e confiabilidade.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-15T11:36:04.186Z"
     }
   ]
 }
