@@ -656,6 +656,14 @@
       "description": "Implementamos um destaque visual para produtos indisponíveis nas páginas de coleções.\nEssa melhoria permite que usuários identifiquem rapidamente itens fora de estoque.\nOtimizando a navegação e a experiência de compra no site.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-15T12:35:14.670Z"
+    },
+    {
+      "date": "2026-06-15",
+      "type": "other",
+      "title": "Adicionar rastreio de pedido no OrderFix",
+      "description": "Implementamos a funcionalidade de rastreamento de pedidos no OrderFix. Agora você pode acompanhar o status e o trajeto de suas encomendas diretamente na plataforma, para maior controle e transparência.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-15T17:56:48.373Z"
     }
   ]
 }
