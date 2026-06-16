@@ -680,6 +680,14 @@
       "description": "Otimizamos a integração de reenvio de pedidos com ajustes pontuais.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-16T11:35:06.920Z"
+    },
+    {
+      "date": "2026-06-16",
+      "type": "other",
+      "title": "Excluir tickets Zendesk criados por API",
+      "description": "Implementamos a funcionalidade de excluir tickets Zendesk gerados indevidamente pela API, otimizando a gestão e correção de dados.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-16T14:27:57.726Z"
     }
   ]
 }
