@@ -672,6 +672,14 @@
       "description": "Agora você pode personalizar suas coleções de produtos com mais facilidade, melhorando a organização e a apresentação na sua loja.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-15T18:19:57.803Z"
+    },
+    {
+      "date": "2026-06-16",
+      "type": "other",
+      "title": "Pequenas modificações na integração de reenvio de pedidos",
+      "description": "Otimizamos a integração de reenvio de pedidos com ajustes pontuais.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-16T11:35:06.920Z"
     }
   ]
 }
