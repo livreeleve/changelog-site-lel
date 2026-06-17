@@ -696,6 +696,14 @@
       "description": "Concluídos os testes de SSL no CloudFlare, assegurando a correta aplicação dos certificados de segurança.",
       "author": "Wanderson da Costa Correa",
       "createdAt": "2026-06-17T11:08:11.307Z"
+    },
+    {
+      "date": "2026-06-17",
+      "type": "other",
+      "title": "Automatizar preenchimento de pedido Shopify no Zendesk",
+      "description": "Automatizamos o preenchimento de pedidos Shopify diretamente no Zendesk, agilizando o atendimento ao cliente e otimizando o fluxo de trabalho do suporte.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-17T12:52:12.780Z"
     }
   ]
 }
