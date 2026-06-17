@@ -712,6 +712,14 @@
       "description": "O Livrecore agora utiliza certificado SSL do Cloudflare, garantindo maior segurança e criptografia na conexão. Isso protege todos os dados transmitidos e eleva a confiança.",
       "author": "Wanderson da Costa Correa",
       "createdAt": "2026-06-17T14:29:36.383Z"
+    },
+    {
+      "date": "2026-06-17",
+      "type": "other",
+      "title": "Criar criador de pedidos no OrderFix",
+      "description": "Implementamos o novo criador de pedidos diretamente no OrderFix.\nEsta ferramenta visa otimizar e agilizar o processo de criação de novos pedidos.\nGarantindo maior eficiência e controle na gestão das suas vendas.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-17T19:37:54.848Z"
     }
   ]
 }
