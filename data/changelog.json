@@ -704,6 +704,14 @@
       "description": "Automatizamos o preenchimento de pedidos Shopify diretamente no Zendesk, agilizando o atendimento ao cliente e otimizando o fluxo de trabalho do suporte.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-17T12:52:12.780Z"
+    },
+    {
+      "date": "2026-06-17",
+      "type": "other",
+      "title": "Adicionar certificado SSL do cloudflare ao livrecore",
+      "description": "O Livrecore agora utiliza certificado SSL do Cloudflare, garantindo maior segurança e criptografia na conexão. Isso protege todos os dados transmitidos e eleva a confiança.",
+      "author": "Wanderson da Costa Correa",
+      "createdAt": "2026-06-17T14:29:36.383Z"
     }
   ]
 }
