@@ -720,6 +720,14 @@
       "description": "Implementamos o novo criador de pedidos diretamente no OrderFix.\nEsta ferramenta visa otimizar e agilizar o processo de criação de novos pedidos.\nGarantindo maior eficiência e controle na gestão das suas vendas.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-17T19:37:54.848Z"
+    },
+    {
+      "date": "2026-06-17",
+      "type": "other",
+      "title": "Atualizações no OrderFix",
+      "description": "O OrderFix recebeu atualizações que aprimoram\nseu desempenho geral e corrigem pontos importantes,\nproporcionando uma experiência mais estável.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-17T19:38:04.537Z"
     }
   ]
 }
