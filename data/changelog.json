@@ -728,6 +728,14 @@
       "description": "O OrderFix recebeu atualizações que aprimoram\nseu desempenho geral e corrigem pontos importantes,\nproporcionando uma experiência mais estável.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-17T19:38:04.537Z"
+    },
+    {
+      "date": "2026-06-18",
+      "type": "other",
+      "title": "Criar solução no sistema de troca e devolução.",
+      "description": "Implementamos uma nova solução completa para o sistema de troca e devolução, otimizando o processo. Agora, gerenciar solicitações é mais rápido e eficiente para todos os envolvidos.",
+      "author": "Wanderson da Costa Correa",
+      "createdAt": "2026-06-18T19:58:16.904Z"
     }
   ]
 }
