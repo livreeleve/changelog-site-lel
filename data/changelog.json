@@ -760,6 +760,14 @@
       "description": "Otimizamos a integração Millenium: pedidos devolvidos agora são marcados como entregues, padronizando o fechamento do ciclo de status.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-22T12:32:28.436Z"
+    },
+    {
+      "date": "2026-06-22",
+      "type": "other",
+      "title": "Implementação do Scalar e ajuste de compilaçaõ  - LivreCore Server",
+      "description": "Implementamos o Scalar no LivreCore Server e otimizamos a compilação para melhor performance.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-22T17:04:29.777Z"
     }
   ]
 }
