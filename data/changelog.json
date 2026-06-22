@@ -768,6 +768,14 @@
       "description": "Implementamos o Scalar no LivreCore Server e otimizamos a compilação para melhor performance.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-22T17:04:29.777Z"
+    },
+    {
+      "date": "2026-06-22",
+      "type": "other",
+      "title": "Página de Produtos em Liquidação",
+      "description": "Lançamos a nova página de Produtos em Liquidação, oferecendo uma forma fácil de encontrar todas as nossas promoções e ofertas.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-22T20:10:00.818Z"
     }
   ]
 }
