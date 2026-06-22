@@ -752,6 +752,14 @@
       "description": "Implementamos o reembolso condicional para gerenciar devoluções com regras específicas. Agora é possível aplicar estornos com base em condições pré-definidas, otimizando o controle e a flexibilidade nos processos.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-19T15:12:35.199Z"
+    },
+    {
+      "date": "2026-06-22",
+      "type": "other",
+      "title": "Marcar o pedido como entregue quando for Devolvido - Millenium Integration",
+      "description": "Otimizamos a integração Millenium: pedidos devolvidos agora são marcados como entregues, padronizando o fechamento do ciclo de status.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-22T12:32:28.436Z"
     }
   ]
 }
