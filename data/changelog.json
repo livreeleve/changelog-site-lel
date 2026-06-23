@@ -776,6 +776,14 @@
       "description": "Lançamos a nova página de Produtos em Liquidação, oferecendo uma forma fácil de encontrar todas as nossas promoções e ofertas.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-22T20:10:00.818Z"
+    },
+    {
+      "date": "2026-06-23",
+      "type": "other",
+      "title": "Tratar pedidos com entrega não realizada e sem nota de entrada",
+      "description": "Melhoramos a gestão de pedidos com entrega não realizada e sem nota de entrada.\nAgora, esses casos são tratados de forma mais eficiente,\nevitando inconsistências no sistema.",
+      "author": "Lucas de Carvalho",
+      "createdAt": "2026-06-23T12:15:46.173Z"
     }
   ]
 }
