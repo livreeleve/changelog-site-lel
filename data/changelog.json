@@ -784,6 +784,14 @@
       "description": "Melhoramos a gestão de pedidos com entrega não realizada e sem nota de entrada.\nAgora, esses casos são tratados de forma mais eficiente,\nevitando inconsistências no sistema.",
       "author": "Lucas de Carvalho",
       "createdAt": "2026-06-23T12:15:46.173Z"
+    },
+    {
+      "date": "2026-06-23",
+      "type": "other",
+      "title": "Atualização - Price-Timer",
+      "description": "Realizamos uma atualização no Price-Timer, otimizando sua performance e estabilidade.\nAgora, a exibição de preços com tempo limite é mais precisa e confiável.\nEsta melhoria visa aprimorar a experiência geral do usuário.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-23T12:19:29.643Z"
     }
   ]
 }
