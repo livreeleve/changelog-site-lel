@@ -808,6 +808,14 @@
       "description": "Adicionamos os campos de bairro e complemento no OrderFix, permitindo o registro de endereços mais completos e precisos nos pedidos.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-24T12:28:56.801Z"
+    },
+    {
+      "date": "2026-06-24",
+      "type": "other",
+      "title": "Verificar envio avise-me WhatsApp",
+      "description": "Ajustes e verificações realizados no sistema de envio de notificações 'Avise-me' via WhatsApp para assegurar a entrega precisa das mensagens.",
+      "author": "Gustavo Fagundes",
+      "createdAt": "2026-06-24T16:41:55.901Z"
     }
   ]
 }
