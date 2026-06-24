@@ -800,6 +800,14 @@
       "description": "Realizamos uma série de ajustes e atualizações no Livre Core para otimizar o desempenho e a estabilidade. Essas melhorias visam proporcionar uma experiência mais fluida e segura para todos os usuários.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-24T11:45:28.896Z"
+    },
+    {
+      "date": "2026-06-24",
+      "type": "other",
+      "title": "Adicionar campos de bairro e complemento no OrderFix",
+      "description": "Adicionamos os campos de bairro e complemento no OrderFix, permitindo o registro de endereços mais completos e precisos nos pedidos.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-24T12:28:56.801Z"
     }
   ]
 }
