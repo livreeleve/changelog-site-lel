@@ -824,6 +824,14 @@
       "description": "Implementamos o envio automático de mensagens via WhatsApp para pedidos marcados como \"disponível para retirada\". Essa funcionalidade agiliza a comunicação com o cliente, notificando-o prontamente. Agora, seus clientes serão avisados de forma mais eficiente.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-25T14:41:47.399Z"
+    },
+    {
+      "date": "2026-06-25",
+      "type": "other",
+      "title": "Ajustes FasyShipping",
+      "description": "Implementamos ajustes no módulo FasyShipping, garantindo um desempenho mais otimizado. Isso resultará em um processo de envio mais eficiente e confiável.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-25T17:23:59.478Z"
     }
   ]
 }
