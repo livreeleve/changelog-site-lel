@@ -816,6 +816,14 @@
       "description": "Ajustes e verificações realizados no sistema de envio de notificações 'Avise-me' via WhatsApp para assegurar a entrega precisa das mensagens.",
       "author": "Gustavo Fagundes",
       "createdAt": "2026-06-24T16:41:55.901Z"
+    },
+    {
+      "date": "2026-06-25",
+      "type": "other",
+      "title": "Criar envio WhatsApp para pedidos \"disponível para retirada\"",
+      "description": "Implementamos o envio automático de mensagens via WhatsApp para pedidos marcados como \"disponível para retirada\". Essa funcionalidade agiliza a comunicação com o cliente, notificando-o prontamente. Agora, seus clientes serão avisados de forma mais eficiente.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-25T14:41:47.399Z"
     }
   ]
 }
