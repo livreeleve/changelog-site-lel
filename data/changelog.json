@@ -832,6 +832,14 @@
       "description": "Implementamos ajustes no módulo FasyShipping, garantindo um desempenho mais otimizado. Isso resultará em um processo de envio mais eficiente e confiável.",
       "author": "Victor Derrihu",
       "createdAt": "2026-06-25T17:23:59.478Z"
+    },
+    {
+      "date": "2026-06-25",
+      "type": "other",
+      "title": "Criar filtro de transportadora",
+      "description": "Implementamos um novo filtro de transportadora, otimizando a busca e organização de informações relacionadas.",
+      "author": "Victor Derrihu",
+      "createdAt": "2026-06-25T19:36:04.461Z"
     }
   ]
 }
